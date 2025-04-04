@@ -80,6 +80,10 @@ flutter:
     - family: Manrope
       fonts:
         - asset: assets\fonts\Manrope-Regular.ttf
-  #
+    - family: Inter
+      fonts:
+        - asset: assets\fonts\Inter_18pt-Regular.ttf
+    
+  
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
