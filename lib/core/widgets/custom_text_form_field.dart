@@ -6,6 +6,7 @@ import '../utils/app_styles.dart';
 class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField({
     super.key,
+    required this.lable,
     this.onChanged,
     this.suffixIcon,
     this.validator,
@@ -14,6 +15,7 @@ class CustomTextFormField extends StatelessWidget {
     this.prefixIcon,
     this.maxLine,
   });
+  final String lable;
   final TextEditingController? controller;
   final int? maxLine;
   final Function(String)? onChanged;
@@ -23,27 +25,39 @@ class CustomTextFormField extends StatelessWidget {
   final TextInputType? keyboardType;
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      keyboardType: keyboardType,
-      controller: controller,
-      validator: validator,
-      autovalidateMode: AutovalidateMode.onUserInteraction,
-      onChanged: onChanged,
-      style: AppStyles.regular18(context),
-      maxLines: maxLine ?? 1,
-      cursorColor: AppColors.grey,
-      decoration: InputDecoration(
-        fillColor: AppColors.black2,
-        filled: true,
-        suffixIcon: suffixIcon,
-        prefixIcon: prefixIcon,
-        contentPadding:
-            const EdgeInsets.symmetric(vertical: 16.0, horizontal: 16.0),
-        focusedBorder: _buildOutlineBorder(),
-        errorBorder: errorBorder(context),
-        focusedErrorBorder: errorBorder(context),
-        enabledBorder: _buildOutlineBorder(color: AppColors.black2),
-      ),
+    return Column(
+      spacing: 12,
+      children: [
+        SizedBox(
+          width: double.infinity,
+          child: Text(
+            lable,
+            style: AppStyles.medium16Manrope(context),
+          ),
+        ),
+        TextFormField(
+          keyboardType: keyboardType,
+          controller: controller,
+          validator: validator,
+          autovalidateMode: AutovalidateMode.onUserInteraction,
+          onChanged: onChanged,
+          style: AppStyles.regular18(context),
+          maxLines: maxLine ?? 1,
+          cursorColor: AppColors.grey,
+          decoration: InputDecoration(
+            fillColor: AppColors.black2,
+            filled: true,
+            suffixIcon: suffixIcon,
+            prefixIcon: prefixIcon,
+            contentPadding:
+                const EdgeInsets.symmetric(vertical: 16.0, horizontal: 16.0),
+            focusedBorder: _buildOutlineBorder(),
+            errorBorder: errorBorder(context),
+            focusedErrorBorder: errorBorder(context),
+            enabledBorder: _buildOutlineBorder(color: AppColors.black2),
+          ),
+        ),
+      ],
     );
   }
 
