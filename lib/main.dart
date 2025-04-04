@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'core/utils/size_config.dart';
 import 'core/views/protfolio_view.dart';
 
 void main() {
@@ -11,8 +12,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig.init(context);
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(useMaterial3: true),
       home: const ProtfolioView(),
     );

@@ -2,75 +2,98 @@ import 'package:flutter/material.dart';
 
 import '../../constants.dart';
 import 'app_colors.dart';
+import 'size_config.dart';
 
 abstract class AppStyles {
-  static const TextStyle medium14 = TextStyle(
-    fontWeight: FontWeight.w500,
-    fontSize: 14,
-    fontFamily: Constants.manropeFontFamily,
-    color: AppColors.white,
-  );
+  static TextStyle medium14(BuildContext context) => TextStyle(
+        fontWeight: FontWeight.w500,
+        fontSize: getResponsiveFontsize(context, fontsize: 14),
+        fontFamily: Constants.manropeFontFamily,
+        color: AppColors.white,
+      );
 
-  static const TextStyle medium16Inter = TextStyle(
-    fontWeight: FontWeight.w500,
-    fontSize: 16,
-    fontFamily: Constants.interFontFamily,
-    color: AppColors.white,
-  );
-  
-  static const TextStyle medium16Manrope = TextStyle(
-    fontWeight: FontWeight.w500,
-    fontSize: 16,
-    fontFamily: Constants.manropeFontFamily,
-    color: AppColors.white,
-  );
+  static TextStyle medium16Inter(BuildContext context) => TextStyle(
+        fontWeight: FontWeight.w500,
+        fontSize: getResponsiveFontsize(context, fontsize: 16),
+        fontFamily: Constants.interFontFamily,
+        color: AppColors.white,
+      );
 
-  static const TextStyle semiBold16 = TextStyle(
-    fontWeight: FontWeight.w600,
-    fontSize: 16,
-    fontFamily: Constants.manropeFontFamily,
-    color: AppColors.white,
-  );
+  static TextStyle medium16Manrope(BuildContext context) => TextStyle(
+        fontWeight: FontWeight.w500,
+        fontSize: getResponsiveFontsize(context, fontsize: 16),
+        fontFamily: Constants.manropeFontFamily,
+        color: AppColors.white,
+      );
 
-  static const TextStyle bold16 = TextStyle(
-    fontWeight: FontWeight.w700,
-    fontSize: 16,
-    fontFamily: Constants.manropeFontFamily,
-    color: AppColors.black,
-  );
+  static TextStyle semiBold16(BuildContext context) => TextStyle(
+        fontWeight: FontWeight.w600,
+        fontSize: getResponsiveFontsize(context, fontsize: 16),
+        fontFamily: Constants.manropeFontFamily,
+        color: AppColors.white,
+      );
 
-  static const TextStyle regular18 = TextStyle(
-    fontWeight: FontWeight.w400,
-    fontSize: 18,
-    fontFamily: Constants.manropeFontFamily,
-    color: AppColors.grey,
-  );
+  static TextStyle bold16(BuildContext context) => TextStyle(
+        fontWeight: FontWeight.w700,
+        fontSize: getResponsiveFontsize(context, fontsize: 16),
+        fontFamily: Constants.manropeFontFamily,
+        color: AppColors.black,
+      );
 
-  static const TextStyle medium32 = TextStyle(
-    fontWeight: FontWeight.w500,
-    fontSize: 32,
-    fontFamily: Constants.manropeFontFamily,
-    color: AppColors.white,
-  );
+  static TextStyle regular18(BuildContext context) => TextStyle(
+        fontWeight: FontWeight.w400,
+        fontSize: getResponsiveFontsize(context, fontsize: 18),
+        fontFamily: Constants.manropeFontFamily,
+        color: AppColors.grey,
+      );
 
-  static const TextStyle regular32 = TextStyle(
-    fontWeight: FontWeight.w400,
-    fontSize: 32,
-    fontFamily: Constants.bebasNeueFontFamily,
-    color: AppColors.white,
-  );
+  static TextStyle medium32(BuildContext context) => TextStyle(
+        fontWeight: FontWeight.w500,
+        fontSize: getResponsiveFontsize(context, fontsize: 32),
+        fontFamily: Constants.manropeFontFamily,
+        color: AppColors.white,
+      );
 
-  static const TextStyle regular40 = TextStyle(
-    fontWeight: FontWeight.w400,
-    fontSize: 40,
-    fontFamily: Constants.bebasNeueFontFamily,
-    color: AppColors.white,
-  );
+  static TextStyle regular32(BuildContext context) => TextStyle(
+        fontWeight: FontWeight.w400,
+        fontSize: getResponsiveFontsize(context, fontsize: 32),
+        fontFamily: Constants.bebasNeueFontFamily,
+        color: AppColors.white,
+      );
 
-  static const TextStyle regular65 = TextStyle(
-    fontWeight: FontWeight.w400,
-    fontSize: 65,
-    fontFamily: Constants.bebasNeueFontFamily,
-    color: AppColors.white,
-  );
+  static TextStyle regular40(BuildContext context) => TextStyle(
+        fontWeight: FontWeight.w400,
+        fontSize: getResponsiveFontsize(context, fontsize: 40),
+        fontFamily: Constants.bebasNeueFontFamily,
+        color: AppColors.white,
+      );
+
+  static TextStyle regular65(BuildContext context) => TextStyle(
+        fontWeight: FontWeight.w400,
+        fontSize: getResponsiveFontsize(context, fontsize: 65),
+        fontFamily: Constants.bebasNeueFontFamily,
+        color: AppColors.white,
+      );
+
+  static double getResponsiveFontsize(BuildContext context,
+      {required double fontsize}) {
+    double scaleFactor = getScaleFactor(context);
+
+    double responsiveFontSzie = scaleFactor * fontsize;
+    double lowerLimit = 0.85 * responsiveFontSzie;
+    double upperLimit = 1.25 * responsiveFontSzie;
+
+    return responsiveFontSzie.clamp(lowerLimit, upperLimit);
+  }
+
+  static double getScaleFactor(BuildContext context) {
+    double width = SizeConfig.width;
+    if (width <= SizeConfig.tablet) {
+      return width / 550;
+    } else if (width <= SizeConfig.desktop) {
+      return width / 1000;
+    } else {
+      return width / 1500;
+    }
+  }
 }
