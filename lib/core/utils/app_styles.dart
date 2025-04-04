@@ -87,7 +87,7 @@ abstract class AppStyles {
   }
 
   static double getScaleFactor(BuildContext context) {
-    double width = SizeConfig.width;
+    double width = MediaQuery.of(context).size.width;
     if (width <= SizeConfig.tablet) {
       return width / 550;
     } else if (width <= SizeConfig.desktop) {
