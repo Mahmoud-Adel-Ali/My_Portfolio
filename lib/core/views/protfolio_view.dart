@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../utils/app_colors.dart';
 import '../utils/size_config.dart';
 import '../widgets/adaptive_layout_widget.dart';
 
@@ -17,12 +18,12 @@ class _DashBoardViewState extends State<ProtfolioView> {
     return Scaffold(
       key: scaffoldKey,
       // drawer: const CustomDrawer(),
-      backgroundColor: const Color(0xfff7f9fa),
+      backgroundColor: AppColors.background,
       appBar: MediaQuery.sizeOf(context).width <= SizeConfig.tablet
           ? AppBar(
-              backgroundColor: Colors.white,
+              backgroundColor: AppColors.background,
               flexibleSpace: FlexibleSpaceBar(
-                background: Container(color: Colors.white),
+                background: Container(color: AppColors.background),
               ),
               leading: IconButton(
                   onPressed: () {
