@@ -8,13 +8,15 @@ class CustomButton extends StatelessWidget {
     super.key,
     required this.text,
     this.showDotIcon = true,
+    this.onPressed,
   });
   final String text;
   final bool? showDotIcon;
+  final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
-      onPressed: () {},
+      onPressed: onPressed,
       color: AppColors.main,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
