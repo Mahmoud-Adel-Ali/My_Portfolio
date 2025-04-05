@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'core/utils/size_config.dart';
-import 'core/views/protfolio_view.dart';
+import 'features/portfolio/presentation/views/protfolio_view.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../utils/app_colors.dart';
-import '../utils/size_config.dart';
-import '../widgets/adaptive_layout_widget.dart';
+import '../../../../core/utils/app_colors.dart';
+import '../../../../core/utils/size_config.dart';
+import '../../../../core/widgets/adaptive_layout_widget.dart';
 
 class ProtfolioView extends StatefulWidget {
   const ProtfolioView({super.key});
