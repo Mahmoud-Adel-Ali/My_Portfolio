@@ -12,11 +12,15 @@ class Assets {
 
   static const String iconsVector = "assets/icons/Vector.svg";
 
-  static const String imagesChatApp = "assets/images/chat-app.jfif";
+  static const String imagesChatApp = "assets/images/chat-app.png";
 
   static const String imagesDocLink = "assets/images/doc_link.png";
 
   static const String imagesInstagram = "assets/images/instagram.png";
+
+  static const String imagesMahmoud1 = "assets/images/mahmoud1.png";
+
+  static const String imagesMahmoud2 = "assets/images/mahmoud2.png";
 
   static const String imagesNectar = "assets/images/nectar.png";
 
