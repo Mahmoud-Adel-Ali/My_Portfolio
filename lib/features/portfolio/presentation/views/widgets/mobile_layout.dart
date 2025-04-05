@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'header_image.dart';
 import 'name_and_title_and_contact_me_section.dart';
 
 class MobileLayout extends StatelessWidget {
@@ -13,6 +14,8 @@ class MobileLayout extends StatelessWidget {
         child: Column(
           children: [
             NameAndTitleAndContactMeSection(),
+            const SizedBox(height: 32),
+            HeaderImage(),
           ],
         ),
       ),
