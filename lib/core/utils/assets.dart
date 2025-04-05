@@ -12,6 +12,8 @@ class Assets {
 
   static const String iconsVector = "assets/icons/Vector.svg";
 
+  static const String imagesChatApp = "assets/images/chat-app.jfif";
+
   static const String imagesDocLink = "assets/images/doc_link.png";
 
   static const String imagesInstagram = "assets/images/instagram.png";
