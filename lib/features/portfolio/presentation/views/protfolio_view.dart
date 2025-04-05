@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/size_config.dart';
 import '../../../../core/widgets/adaptive_layout_widget.dart';
+import 'widgets/app_bar_name.dart';
+import 'widgets/desktop_layout.dart';
+import 'widgets/mobile_layout.dart';
 
 class ProtfolioView extends StatefulWidget {
   const ProtfolioView({super.key});
@@ -21,6 +24,7 @@ class _DashBoardViewState extends State<ProtfolioView> {
       backgroundColor: AppColors.background,
       appBar: MediaQuery.sizeOf(context).width <= SizeConfig.tablet
           ? AppBar(
+              title: AppBarName(),
               backgroundColor: AppColors.background,
               flexibleSpace: FlexibleSpaceBar(
                 background: Container(color: AppColors.background),
@@ -33,15 +37,9 @@ class _DashBoardViewState extends State<ProtfolioView> {
             )
           : null,
       body: AdaptiveLayoutWidget(
-        //DesktoopLayout(),
-        desktopLayout: (context) =>
-            const SizedBox(child: Center(child: Text('DeskTop'))),
-        // DashboardTabletLayout(),
-        tabletLayout: (context) =>
-            const SizedBox(child: Center(child: Text('Taplet'))),
-        // DashboardMobileLayout(),
-        mobileLayout: (context) =>
-            const SizedBox(child: Center(child: Text('Mobile'))),
+        desktopLayout: (context) => DesktopLayout(),
+        tabletLayout: (context) => DesktopLayout(),
+        mobileLayout: (context) => MobileLayout(),
       ),
     );
   }
