@@ -18,7 +18,7 @@ class NameAndTitleAndContactMeSection extends StatelessWidget {
           width: double.infinity,
           child: SelectableText(
             "hi, i am \nmahmoud adel.",
-            style: AppStyles.regular65(context),
+            style: AppStyles.regular50(context),
           ),
         ),
         SizedBox(

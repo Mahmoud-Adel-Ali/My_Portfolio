@@ -68,9 +68,9 @@ abstract class AppStyles {
         color: AppColors.white,
       );
 
-  static TextStyle regular65(BuildContext context) => TextStyle(
+  static TextStyle regular50(BuildContext context) => TextStyle(
         fontWeight: FontWeight.w400,
-        fontSize: getResponsiveFontsize(context, fontsize: 65),
+        fontSize: getResponsiveFontsize(context, fontsize: 50),
         fontFamily: Constants.bebasNeueFontFamily,
         color: AppColors.white,
       );
