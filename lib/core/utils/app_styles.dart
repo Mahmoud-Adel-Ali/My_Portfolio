@@ -80,8 +80,8 @@ abstract class AppStyles {
     double scaleFactor = getScaleFactor(context);
 
     double responsiveFontSzie = scaleFactor * fontsize;
-    double lowerLimit = 0.85 * responsiveFontSzie;
-    double upperLimit = 1.25 * responsiveFontSzie;
+    double lowerLimit = 0.75 * responsiveFontSzie;
+    double upperLimit = 1.1 * responsiveFontSzie;
 
     return responsiveFontSzie.clamp(lowerLimit, upperLimit);
   }
