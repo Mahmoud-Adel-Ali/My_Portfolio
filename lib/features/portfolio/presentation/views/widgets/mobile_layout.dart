@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'name_and_title_for_me.dart';
+import 'name_and_title_and_contact_me_section.dart';
 
 class MobileLayout extends StatelessWidget {
   const MobileLayout({super.key});
@@ -12,7 +12,7 @@ class MobileLayout extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            NameAndTitleForMe(),
+            NameAndTitleAndContactMeSection(),
           ],
         ),
       ),

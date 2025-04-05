@@ -13,15 +13,20 @@ class CustomIconButton extends StatelessWidget {
   final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: () {},
-      style: ElevatedButton.styleFrom(
-        backgroundColor: AppColors.black2,
-        elevation: 0,
-        shape: const CircleBorder(), // This makes the button circular
-        padding: const EdgeInsets.all(16), // Adjust padding as needed
+    return Flexible(
+      child: ElevatedButton(
+        onPressed: () {},
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.black2,
+          elevation: 0,
+          shape: const CircleBorder(), // This makes the button circular
+          padding: const EdgeInsets.all(16), // Adjust padding as needed
+        ),
+        child: FittedBox(
+          fit: BoxFit.fill,
+          child: SvgPicture.asset(svgImage),
+        ),
       ),
-      child: SvgPicture.asset(svgImage),
     );
   }
 }
