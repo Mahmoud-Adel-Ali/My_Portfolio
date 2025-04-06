@@ -4,6 +4,7 @@ import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/size_config.dart';
 import '../../../../core/widgets/adaptive_layout_widget.dart';
 import 'widgets/app_bar_name.dart';
+import 'widgets/custom_drawer.dart';
 import 'widgets/desktop_layout.dart';
 import 'widgets/mobile_layout.dart';
 
@@ -20,7 +21,7 @@ class _DashBoardViewState extends State<ProtfolioView> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      // drawer: const CustomDrawer(),
+      drawer: const CustomDrawer(),
       backgroundColor: AppColors.background,
       appBar: MediaQuery.sizeOf(context).width <= SizeConfig.tablet
           ? AppBar(
