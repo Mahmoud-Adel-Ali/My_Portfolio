@@ -17,6 +17,7 @@ class DesktopLayout extends StatelessWidget {
             DesktopLayoutAppBar(),
             SizedBox(height: 24),
             Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Expanded(flex: 2, child: NameAndTitleAndContactMeSection()),
                 SizedBox(width: 32),

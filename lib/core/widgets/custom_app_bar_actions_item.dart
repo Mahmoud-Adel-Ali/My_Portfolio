@@ -23,11 +23,11 @@ class CustomAppBarActionsItem extends StatelessWidget {
         shape: const StadiumBorder(),
         elevation: 2,
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 16),
-        // padding: EdgeInsets.zero,
+        minimumSize: Size.zero,
       ),
       child: Text(
         text,
-        style: AppStyles.medium16Inter(context),
+        style: AppStyles.semiBold16(context),
       ),
     );
   }

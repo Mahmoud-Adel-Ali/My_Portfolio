@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 
-import '../../../../../core/widgets/custom_drawer_item.dart';
+import '../../../../../core/widgets/custom_app_bar_actions_item.dart';
 import 'app_bar_name.dart';
 
 class DesktopLayoutAppBar extends StatelessWidget {
@@ -19,19 +19,19 @@ class DesktopLayoutAppBar extends StatelessWidget {
         Row(
           spacing: 12,
           children: [
-            CustomDrawerItem(
+            CustomAppBarActionsItem(
               text: "Work",
               onPressed: () {
                 log('work');
               },
             ),
-            CustomDrawerItem(
+            CustomAppBarActionsItem(
               text: "About",
               onPressed: () {
                 log('about');
               },
             ),
-            CustomDrawerItem(
+            CustomAppBarActionsItem(
               text: "Contact",
               onPressed: () {
                 log('contact');
