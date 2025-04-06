@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'custom_divider.dart';
 import 'header_image.dart';
 import 'name_and_title_and_contact_me_section.dart';
 
@@ -12,10 +13,11 @@ class MobileLayout extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
+          spacing: 16,
           children: [
             NameAndTitleAndContactMeSection(),
-            const SizedBox(height: 32),
             HeaderImage(),
+            CustomDivider(),
           ],
         ),
       ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'custom_divider.dart';
 import 'desktop_layout_app_bat.dart';
 import 'header_image.dart';
 import 'name_and_title_and_contact_me_section.dart';
@@ -13,9 +14,9 @@ class DesktopLayout extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: const Column(
+          spacing: 16,
           children: [
             DesktopLayoutAppBar(),
-            SizedBox(height: 24),
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -23,7 +24,8 @@ class DesktopLayout extends StatelessWidget {
                 SizedBox(width: 32),
                 Expanded(child: HeaderImage()),
               ],
-            )
+            ),
+            CustomDivider(),
           ],
         ),
       ),
