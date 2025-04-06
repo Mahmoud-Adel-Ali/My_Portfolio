@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'all_projects_section_for_mobile.dart';
 import 'custom_divider.dart';
 import 'header_image.dart';
 import 'name_and_title_and_contact_me_section.dart';
-import 'project_item_for_mobile.dart';
 
 class MobileLayout extends StatelessWidget {
   const MobileLayout({super.key});
@@ -19,7 +19,8 @@ class MobileLayout extends StatelessWidget {
             NameAndTitleAndContactMeSection(),
             HeaderImage(),
             CustomDivider(),
-            ProjectItemForMobile(),
+            AllProjectsSectionForMobile(),
+            CustomDivider(),
           ],
         ),
       ),

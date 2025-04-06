@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'all_projects_section_for_desktop.dart';
 import 'custom_divider.dart';
 import 'desktop_layout_app_bat.dart';
 import 'header_image.dart';
 import 'name_and_title_and_contact_me_section.dart';
-import 'project_item_for_desktop.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
@@ -27,7 +27,8 @@ class DesktopLayout extends StatelessWidget {
               ],
             ),
             CustomDivider(),
-            ProjectItemForDesktop(),
+            AllProjectsSectionForDesktop(),
+            CustomDivider(),
           ],
         ),
       ),
