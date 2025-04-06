@@ -17,8 +17,8 @@ class CustomDrawerItem extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        // shape: const StadiumBorder(),
-        // elevation: 0,
+        shape: const StadiumBorder(),
+        elevation: 2,
         padding: EdgeInsets.zero,
       ),
       child: Container(

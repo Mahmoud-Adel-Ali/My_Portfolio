@@ -10,7 +10,7 @@ class HeaderImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: double.infinity,
+      // width: double.infinity,
       child: AspectRatio(
         aspectRatio: 0.8,
         child: Image.asset(
