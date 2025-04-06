@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/core/content/all_projects.dart';
 
+import 'project_details.dart';
 import 'project_image_card.dart';
 
 class MobileLayout extends StatelessWidget {
@@ -15,6 +16,9 @@ class MobileLayout extends StatelessWidget {
           spacing: 16,
           children: [
             ProjectImageCard(
+              project: allProjects[0],
+            ),
+            ProjectDetails(
               project: allProjects[0],
             ),
             // NameAndTitleAndContactMeSection(),
