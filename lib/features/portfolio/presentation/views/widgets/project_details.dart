@@ -30,7 +30,7 @@ class ProjectDetails extends StatelessWidget {
           title: "Role",
           trilling: "Flutter Developer",
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 24),
         ProjectLinks(project: project),
       ],
     );

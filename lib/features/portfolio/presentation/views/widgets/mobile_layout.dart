@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/core/content/all_projects.dart';
 
-import 'project_details.dart';
-import 'project_image_card.dart';
+import 'custom_divider.dart';
+import 'header_image.dart';
+import 'name_and_title_and_contact_me_section.dart';
+import 'project_item_for_mobile.dart';
 
 class MobileLayout extends StatelessWidget {
   const MobileLayout({super.key});
@@ -15,15 +16,10 @@ class MobileLayout extends StatelessWidget {
         child: Column(
           spacing: 16,
           children: [
-            ProjectImageCard(
-              project: allProjects[0],
-            ),
-            ProjectDetails(
-              project: allProjects[0],
-            ),
-            // NameAndTitleAndContactMeSection(),
-            // HeaderImage(),
-            // CustomDivider(),
+            NameAndTitleAndContactMeSection(),
+            HeaderImage(),
+            CustomDivider(),
+            ProjectItemForMobile(),
           ],
         ),
       ),
