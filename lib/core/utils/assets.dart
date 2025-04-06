@@ -4,6 +4,8 @@ class Assets {
   
   static const String iconsFacebook = "assets/icons/facebook.svg";
 
+  static const String iconsFigma = "assets/icons/figma.svg";
+
   static const String iconsGithub = "assets/icons/github.svg";
 
   static const String iconsInstagram = "assets/icons/instagram.svg";
