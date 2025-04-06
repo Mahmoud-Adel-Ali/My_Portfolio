@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
+import '../utils/app_colors.dart';
 import '../utils/app_styles.dart';
 
-class CustomDrawerItem extends StatelessWidget {
-  const CustomDrawerItem({
+class CustomAppBarActionsItem extends StatelessWidget {
+  const CustomAppBarActionsItem({
     super.key,
     required this.text,
     this.onPressed,
@@ -17,17 +18,16 @@ class CustomDrawerItem extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
+        backgroundColor: AppColors.black,
+        foregroundColor: AppColors.white,
         shape: const StadiumBorder(),
         elevation: 2,
-        padding: EdgeInsets.zero,
-      ),
-      child: Container(
-        color: Colors.black,
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 16),
-        child: Text(
-          text,
-          style: AppStyles.medium16Inter(context),
-        ),
+        // padding: EdgeInsets.zero,
+      ),
+      child: Text(
+        text,
+        style: AppStyles.medium16Inter(context),
       ),
     );
   }
