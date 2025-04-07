@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../core/utils/assets.dart';
 import 'all_projects_section_for_mobile.dart';
 import 'custom_divider.dart';
 import 'header_image.dart';
@@ -17,7 +18,7 @@ class MobileLayout extends StatelessWidget {
           spacing: 16,
           children: [
             NameAndTitleAndContactMeSection(),
-            HeaderImage(),
+            HeaderImage(image: Assets.imagesMahmoud1),
             CustomDivider(),
             AllProjectsSectionForMobile(),
             CustomDivider(),

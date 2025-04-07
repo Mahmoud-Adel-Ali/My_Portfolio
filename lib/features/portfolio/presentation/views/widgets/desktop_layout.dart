@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../core/utils/assets.dart';
 import 'all_projects_section_for_desktop.dart';
 import 'custom_divider.dart';
 import 'desktop_layout_app_bat.dart';
@@ -23,7 +24,11 @@ class DesktopLayout extends StatelessWidget {
               children: [
                 Expanded(flex: 2, child: NameAndTitleAndContactMeSection()),
                 SizedBox(width: 32),
-                Expanded(child: HeaderImage()),
+                Expanded(
+                  child: HeaderImage(
+                    image: Assets.imagesMahmoud1,
+                  ),
+                ),
               ],
             ),
             CustomDivider(),
