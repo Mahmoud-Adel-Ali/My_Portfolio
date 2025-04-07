@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/assets.dart';
+import 'about_section_for_desktop.dart';
 import 'all_projects_section_for_desktop.dart';
 import 'custom_divider.dart';
 import 'desktop_layout_app_bat.dart';
@@ -33,6 +34,8 @@ class DesktopLayout extends StatelessWidget {
             ),
             CustomDivider(),
             AllProjectsSectionForDesktop(),
+            CustomDivider(),
+            AboutSectionForDesktop(),
             CustomDivider(),
           ],
         ),
