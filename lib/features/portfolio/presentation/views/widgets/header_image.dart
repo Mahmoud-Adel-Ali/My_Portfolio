@@ -10,11 +10,15 @@ class HeaderImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      // width: double.infinity,
       child: AspectRatio(
         aspectRatio: 0.8,
-        child: Image.asset(
-          Assets.imagesMahmoud1,
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(24),
+            image: DecorationImage(
+              image: AssetImage(Assets.imagesMahmoud1),
+            ),
+          ),
         ),
       ),
     );
