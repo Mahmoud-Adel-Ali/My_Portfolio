@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/assets.dart';
+import 'about_section_for_mobile.dart';
 import 'all_projects_section_for_mobile.dart';
 import 'custom_divider.dart';
 import 'header_image.dart';
@@ -21,6 +22,8 @@ class MobileLayout extends StatelessWidget {
             HeaderImage(image: Assets.imagesMahmoud1),
             CustomDivider(),
             AllProjectsSectionForMobile(),
+            CustomDivider(),
+            AboutSectionForMobile(),
             CustomDivider(),
           ],
         ),
