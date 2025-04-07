@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/app_styles.dart';
+import '../../../../../core/widgets/custom_text_button.dart';
 
 class AboutInfo extends StatelessWidget {
   const AboutInfo({super.key});
@@ -30,6 +31,15 @@ class AboutInfo extends StatelessWidget {
             "Experienced Flutter Developer with 2+ years of expertise in building high-performance, scalable mobile applications using Dart, Flutter, and Firebase. Proficient in state management (BLoC, Provider, Riverpod), architectural patterns (MVVM, Clean Architecture), and RESTful API integration. Skilled in UI/UX implementation from Figma designs, debugging, and testing for optimal app stability. Strong foundation in OOP, SOLID principles, data structures, and algorithms, with a passion for writing clean, maintainable code. Effective communicator and team player in Agile environments, fluent in English for seamless collaboration. Committed to continuous learning and staying updated with emerging Flutter technologies.",
             style: AppStyles.regular18(context),
           ),
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            CustomTextButton(
+              text: "More About Me⇗",
+              onPressed: () {},
+            ),
+          ],
         ),
       ],
     );
