@@ -6,29 +6,26 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../utils/app_colors.dart';
 import '../utils/app_styles.dart';
 
-class CustomTextButton extends StatelessWidget {
+class CustomLinkButton extends StatelessWidget {
   final String text;
   final String svgImage;
   final String link;
-  final VoidCallback? onPressed;
 
-  const CustomTextButton({
+  const CustomLinkButton({
     super.key,
     required this.text,
     required this.svgImage,
     required this.link,
-    this.onPressed,
   });
 
   @override
   Widget build(BuildContext context) {
     return Flexible(
       child: TextButton(
-        onPressed: onPressed ??
-            () {
-              // Handle link opening logic here
-              log('Opening link: $link');
-            },
+        onPressed: () {
+          // Handle link opening logic here
+          log('Opening link: $link');
+        },
         style: TextButton.styleFrom(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           tapTargetSize: MaterialTapTargetSize.shrinkWrap,
@@ -52,6 +49,7 @@ class CustomTextButton extends StatelessWidget {
               textAlign: TextAlign.center,
               style: AppStyles.bold16(context).copyWith(
                 color: AppColors.main,
+                decoration: TextDecoration.underline,
               ),
             ),
           ],
