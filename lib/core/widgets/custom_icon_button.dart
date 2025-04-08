@@ -23,7 +23,7 @@ class CustomIconButton extends StatelessWidget {
           padding: const EdgeInsets.all(16), // Adjust padding as needed
         ),
         child: FittedBox(
-          fit: BoxFit.fill,
+          fit: BoxFit.scaleDown,
           child: SvgPicture.asset(svgImage),
         ),
       ),
