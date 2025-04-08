@@ -6,6 +6,7 @@ import 'all_projects_section_for_desktop.dart';
 import 'custom_divider.dart';
 import 'desktop_layout_app_bat.dart';
 import 'header_image.dart';
+import 'lets_connect_section_for_desktop.dart';
 import 'name_and_title_and_contact_me_section.dart';
 
 class DesktopLayout extends StatelessWidget {
@@ -37,6 +38,7 @@ class DesktopLayout extends StatelessWidget {
             CustomDivider(),
             AboutSectionForDesktop(),
             CustomDivider(),
+            LetsConnectSectionForDesktop(),
           ],
         ),
       ),
