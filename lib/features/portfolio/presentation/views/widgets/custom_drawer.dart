@@ -24,13 +24,18 @@ class CustomDrawer extends StatelessWidget {
               ),
             ),
             CustomDrawerItem(
-              text: "Work",
+              text: "Projects",
               onPressed: () {},
             ),
             CustomDrawerItem(
               text: "About",
               onPressed: () {},
               iconData: Icons.info,
+            ),
+            CustomDrawerItem(
+              text: "Skills",
+              onPressed: () {},
+              iconData: Icons.school,
             ),
             CustomDrawerItem(
               text: "Contact",

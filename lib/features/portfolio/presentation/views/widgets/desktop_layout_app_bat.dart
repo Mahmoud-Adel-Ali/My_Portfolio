@@ -20,15 +20,21 @@ class DesktopLayoutAppBar extends StatelessWidget {
           spacing: 12,
           children: [
             CustomAppBarActionsItem(
-              text: "Work",
+              text: "Projects",
               onPressed: () {
-                log('work');
+                log('Projects');
               },
             ),
             CustomAppBarActionsItem(
               text: "About",
               onPressed: () {
                 log('about');
+              },
+            ),
+            CustomAppBarActionsItem(
+              text: "Skills",
+              onPressed: () {
+                log('Skills');
               },
             ),
             CustomAppBarActionsItem(
