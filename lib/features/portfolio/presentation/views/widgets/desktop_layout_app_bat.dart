@@ -3,7 +3,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/widgets/custom_app_bar_actions_item.dart';
-import 'app_bar_name.dart';
+import 'desktop_app_bar_name.dart';
 
 class DesktopLayoutAppBar extends StatelessWidget {
   const DesktopLayoutAppBar({
@@ -15,7 +15,7 @@ class DesktopLayoutAppBar extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        AppBarName(),
+        DesktopAppBarName(),
         Row(
           spacing: 12,
           children: [
