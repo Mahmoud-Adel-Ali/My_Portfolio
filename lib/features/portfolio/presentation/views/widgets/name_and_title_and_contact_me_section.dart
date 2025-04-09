@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/app_styles.dart';
-import '../../../../../core/utils/assets.dart';
 import '../../../../../core/widgets/custom_button.dart';
-import '../../../../../core/widgets/custom_icon_button.dart';
+import 'linked_in_and_github_buttons.dart';
 
 class NameAndTitleAndContactMeSection extends StatelessWidget {
   const NameAndTitleAndContactMeSection({
@@ -36,14 +35,7 @@ class NameAndTitleAndContactMeSection extends StatelessWidget {
               onPressed: () {},
             ),
             SizedBox(width: 8),
-            CustomIconButton(
-              svgImage: Assets.iconsLinkedin,
-              onPressed: () {},
-            ),
-            CustomIconButton(
-              svgImage: Assets.iconsGithub,
-              onPressed: () {},
-            ),
+            LinkedInAndGitHubButtons(),
           ],
         ),
       ],

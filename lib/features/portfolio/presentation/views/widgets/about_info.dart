@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/app_styles.dart';
-import '../../../../../core/widgets/custom_text_button.dart';
+import '../../../../../core/widgets/custom_button.dart';
+import 'linked_in_and_github_buttons.dart';
 
 class AboutInfo extends StatelessWidget {
   const AboutInfo({super.key});
@@ -34,11 +35,13 @@ class AboutInfo extends StatelessWidget {
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CustomTextButton(
-              text: "More About Me⇗",
+            CustomButton(
+              text: "DOWNLOAD RESUME",
               onPressed: () {},
             ),
+            LinkedInAndGitHubButtons(),
           ],
         ),
       ],
