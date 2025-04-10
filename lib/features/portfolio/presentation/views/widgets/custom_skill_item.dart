@@ -25,8 +25,14 @@ class CustomSkillItem extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          SvgPicture.asset(skill.svgImage),
-          const SizedBox(width: 4),
+          SizedBox(
+            height: 20,
+            width: 20,
+            child: SvgPicture.asset(
+              skill.svgImage,
+            ),
+          ),
+          const SizedBox(width: 8),
           Text(
             skill.label,
             style: AppStyles.medium14(context),
