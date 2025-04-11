@@ -7,6 +7,7 @@ import 'custom_divider.dart';
 import 'header_image.dart';
 import 'lets_connect_section_for_mobile.dart';
 import 'name_and_title_and_contact_me_section.dart';
+import 'skills_section_for_mobile.dart';
 
 class MobileLayout extends StatelessWidget {
   const MobileLayout({super.key});
@@ -25,6 +26,8 @@ class MobileLayout extends StatelessWidget {
             AllProjectsSectionForMobile(),
             CustomDivider(),
             AboutSectionForMobile(),
+            CustomDivider(),
+            SkillsSectionForMobile(),
             CustomDivider(),
             LetsConnectSectionForMobile(),
           ],
