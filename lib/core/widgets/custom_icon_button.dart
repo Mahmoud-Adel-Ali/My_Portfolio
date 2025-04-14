@@ -15,7 +15,7 @@ class CustomIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Flexible(
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: onPressed,
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.black2,
           elevation: 0,
