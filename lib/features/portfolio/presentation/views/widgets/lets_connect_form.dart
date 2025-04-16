@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_portfolio/core/widgets/custom_text_form_field.dart';
 
-import '../../../../../core/widgets/custom_button.dart';
 import '../../manager/connect_cubit/connect_cubit.dart';
 import '../../manager/functions/validators.dart';
+import 'lets_connect_button_bolc_consumer.dart';
 
 class LetsConnectForm extends StatelessWidget {
   const LetsConnectForm({super.key});
@@ -40,19 +40,7 @@ class LetsConnectForm extends StatelessWidget {
             controller: cubit.messageConroller,
           ),
           SizedBox(height: 16),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              CustomButton(
-                text: 'SUBMIT',
-                onPressed: () {
-                  if (cubit.formKey.currentState!.validate()) {
-                    cubit.sendMessage();
-                  }
-                },
-              ),
-            ],
-          )
+          LetsConnectButtonBlocConsumer(cubit: cubit)
         ],
       ),
     );
