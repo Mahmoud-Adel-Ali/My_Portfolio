@@ -45,7 +45,11 @@ class LetsConnectForm extends StatelessWidget {
             children: [
               CustomButton(
                 text: 'SUBMIT',
-                onPressed: () {},
+                onPressed: () {
+                  if (cubit.formKey.currentState!.validate()) {
+                    cubit.sendMessage();
+                  }
+                },
               ),
             ],
           )

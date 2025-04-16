@@ -11,4 +11,6 @@ class ConnectCubit extends Cubit<ConnectState> {
   TextEditingController subjectConroller = TextEditingController();
   TextEditingController messageConroller = TextEditingController();
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
+
+  void sendMessage() {}
 }
