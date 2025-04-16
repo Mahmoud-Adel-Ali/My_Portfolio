@@ -4,6 +4,7 @@ import 'package:my_portfolio/core/widgets/custom_text_form_field.dart';
 
 import '../../../../../core/widgets/custom_button.dart';
 import '../../manager/connect_cubit/connect_cubit.dart';
+import '../../manager/functions/validators.dart';
 
 class LetsConnectForm extends StatelessWidget {
   const LetsConnectForm({super.key});
@@ -20,22 +21,22 @@ class LetsConnectForm extends StatelessWidget {
           CustomTextFormField(
             lable: 'Name',
             controller: cubit.nameConroller,
-            // validator: nameValidator,
+            validator: nameValidator,
           ),
           CustomTextFormField(
             lable: 'Email',
-            // validator: emailValidator,
+            validator: emailValidator,
             controller: cubit.emailConroller,
           ),
           CustomTextFormField(
             lable: 'Subject',
-            // validator: subjectValidator,
+            validator: subjectValidator,
             controller: cubit.subjectConroller,
           ),
           CustomTextFormField(
             lable: 'Message',
             maxLine: 4,
-            // validator: messageValidator,
+            validator: messageValidator,
             controller: cubit.messageConroller,
           ),
           SizedBox(height: 16),
