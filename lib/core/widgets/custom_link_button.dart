@@ -1,10 +1,9 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../utils/app_colors.dart';
 import '../utils/app_styles.dart';
+import '../utils/functions/open_url.dart';
 
 class CustomLinkButton extends StatelessWidget {
   final String text;
@@ -23,8 +22,7 @@ class CustomLinkButton extends StatelessWidget {
     return Flexible(
       child: TextButton(
         onPressed: () {
-          // Handle link opening logic here
-          log('Opening link: $link');
+          openUrl(context, link);
         },
         style: TextButton.styleFrom(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../constants.dart';
 import '../../../../../core/utils/app_styles.dart';
+import '../../../../../core/utils/functions/open_url.dart';
 import '../../../../../core/widgets/custom_button.dart';
 import 'linked_in_and_github_buttons.dart';
 
@@ -39,7 +41,9 @@ class AboutInfo extends StatelessWidget {
           children: [
             CustomButton(
               text: "DOWNLOAD RESUME",
-              onPressed: () {},
+              onPressed: () {
+                openUrl(context, Constants.resumeUrl);
+              },
             ),
             LinkedInAndGitHubButtons(),
           ],

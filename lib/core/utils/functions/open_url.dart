@@ -7,6 +7,7 @@ Future<void> openUrl(BuildContext context, String url) async {
   try {
     final bool launched = await launchUrl(uri);
     if (!launched) {
+      // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('Could not launch the URL'),

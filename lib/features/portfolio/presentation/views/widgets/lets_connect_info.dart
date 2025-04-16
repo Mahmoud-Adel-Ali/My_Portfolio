@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../constants.dart';
 import '../../../../../core/utils/app_styles.dart';
 import '../../../../../core/utils/assets.dart';
+import '../../../../../core/utils/functions/open_url.dart';
 import '../../../../../core/widgets/custom_icon_button.dart';
 
 class LetsConnectInfo extends StatelessWidget {
@@ -32,15 +34,21 @@ class LetsConnectInfo extends StatelessWidget {
           children: [
             CustomIconButton(
               svgImage: Assets.iconsLinkedin,
-              onPressed: () {},
+              onPressed: () {
+                openUrl(context, Constants.linkedInUrl);
+              },
             ),
             CustomIconButton(
               svgImage: Assets.iconsGithub,
-              onPressed: () {},
+              onPressed: () {
+                openUrl(context, Constants.githubUrl);
+              },
             ),
             CustomIconButton(
               svgImage: Assets.iconsInstagram,
-              onPressed: () {},
+              onPressed: () {
+                // openUrl(context, Constants.instagramUrl);
+              },
             ),
           ],
         ),
