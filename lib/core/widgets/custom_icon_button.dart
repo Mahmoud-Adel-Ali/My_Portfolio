@@ -4,11 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../utils/app_colors.dart';
 
 class CustomIconButton extends StatelessWidget {
-  const CustomIconButton({
-    super.key,
-    required this.svgImage,
-    this.onPressed,
-  });
+  const CustomIconButton({super.key, required this.svgImage, this.onPressed});
   final String svgImage;
   final void Function()? onPressed;
   @override
