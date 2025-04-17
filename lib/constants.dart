@@ -8,5 +8,5 @@ abstract class Constants {
   static const String facebookUrl =
       "https://www.facebook.com/profile.php?id=100035383894778";
   static const String resumeUrl =
-      "https://sohagedu-my.sharepoint.com/:w:/g/personal/mahmoud2100062_fci_sohag_edu_eg/EYZ4ECvgto9Bje6ALjEKNDUBTXh4PXXBIyJ1QS56gk476g";
+      "https://docs.google.com/document/d/1EtIy3I7J6IlfWPkcI456voSqIjcXYi5M/edit?usp=sharing&ouid=117337474611787358178&rtpof=true&sd=true";
 }
