@@ -30,8 +30,10 @@ class ConnectCubit extends Cubit<ConnectState> {
     );
     //Sending Mail From The User Using SMTP
     final message = Message()
-      ..from = Address(gmailMail, "Mahmoud Adel Ali")
-      ..recipients.add(Address(emailController.text, nameController.text))
+      ..from = Address(emailController.text, nameController.text)
+      // ..from = Address(gmailMail, "Mahmoud Adel Ali")
+      // ..recipients.add(Address(emailController.text, nameController.text))
+      ..recipients.add(Address(gmailMail, "Mahmoud Adel Ali"))
       ..subject = subjectController.text
       ..text = messageController.text;
 
