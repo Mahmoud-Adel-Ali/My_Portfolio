@@ -11,10 +11,10 @@ import 'connect_state.dart';
 class ConnectCubit extends Cubit<ConnectState> {
   ConnectCubit() : super(ConnectInitial());
 
-  TextEditingController nameConroller = TextEditingController();
-  TextEditingController emailConroller = TextEditingController();
-  TextEditingController subjectConroller = TextEditingController();
-  TextEditingController messageConroller = TextEditingController();
+  TextEditingController nameController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController subjectController = TextEditingController();
+  TextEditingController messageController = TextEditingController();
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   void sendMessage() async {
@@ -31,19 +31,28 @@ class ConnectCubit extends Cubit<ConnectState> {
     //Sending Mail From The User Using SMTP
     final message = Message()
       ..from = Address(gmailMail, "Mahmoud Adel Ali")
-      ..recipients.add(Address(emailConroller.text, nameConroller.text))
-      ..subject = subjectConroller.text
-      ..text = messageConroller.text;
+      ..recipients.add(Address(emailController.text, nameController.text))
+      ..subject = subjectController.text
+      ..text = messageController.text;
 
     try {
       emit(SendMessageLoading());
       //Send The Message
       final sendReport = await send(message, gmailSMTP);
       log('Message sent: $sendReport');
+      _reInitControllers();
       emit(SendMessageSuccess());
     } on MailerException catch (e) {
       emit(SendMessageFailure(message: e.toString()));
     }
+  }
+
+  void _reInitControllers() {
+    nameController = TextEditingController();
+    emailController = TextEditingController();
+    subjectController = TextEditingController();
+    messageController = TextEditingController();
+    formKey = GlobalKey<FormState>();
   }
 
 //

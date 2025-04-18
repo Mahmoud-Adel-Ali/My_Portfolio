@@ -1,6 +1,5 @@
-
 String? nameValidator(String? value) {
-  var regx = RegExp(r'^[A-Z][a-z]+ [A-Z][a-z]+ [A-Z][a-z]+$');
+  var regx = RegExp(r'^[A-Za-z ]+$');
   if (value == null || value.isEmpty) {
     return 'Please enter your name';
   } else if (!regx.hasMatch(value)) {
