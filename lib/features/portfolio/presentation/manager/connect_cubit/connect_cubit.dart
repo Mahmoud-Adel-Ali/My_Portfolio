@@ -2,10 +2,10 @@ import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:mailer/mailer.dart';
 import 'package:mailer/smtp_server.dart';
 
-import '../../../../../constants.dart';
 import 'connect_state.dart';
 
 class ConnectCubit extends Cubit<ConnectState> {
@@ -18,30 +18,30 @@ class ConnectCubit extends Cubit<ConnectState> {
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   void sendMessage() async {
+    String gmailMail = dotenv.env['Gmail_Mail']!;
+    String gmailPassword = dotenv.env['Gmail_Password']!;
+    // Create SMTP Server For Gmail
+    final gmailSMTP = SmtpServer(
+      'smtp.gmail.com',
+      port: 587,
+      ssl: false,
+      username: gmailMail,
+      password: gmailPassword,
+    );
+    //Sending Mail From The User Using SMTP
+    final message = Message()
+      ..from = Address(gmailMail, "Mahmoud Adel Ali")
+      ..recipients.add(Address(emailConroller.text, nameConroller.text))
+      ..subject = subjectConroller.text
+      ..text = messageConroller.text;
+
     try {
       emit(SendMessageLoading());
-
-      // Developer uses Gmail account and app password
-      String username = 'mahadel@gmail.com'; // your Gmail address
-      // your generated Gmail app password
-      String password = Constants.appPassword;
-
-      // Developer uses smtpServer with Gmail configuration
-      final smtpServer = gmail(username, password);
-
-      // Developer constructs the message to be sent
-      final message = Message()
-        ..from = Address(username, nameConroller.text)
-        ..recipients.add(Address('recipientEmail'))
-        ..subject = subjectConroller.text
-        ..text = messageConroller.text;
-
-      // Developer sends the message using the SMTP server
-      final sendReport = await send(message, smtpServer);
-
+      //Send The Message
+      final sendReport = await send(message, gmailSMTP);
       log('Message sent: $sendReport');
       emit(SendMessageSuccess());
-    } catch (e) {
+    } on MailerException catch (e) {
       emit(SendMessageFailure(message: e.toString()));
     }
   }
