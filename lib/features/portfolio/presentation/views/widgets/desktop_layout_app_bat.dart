@@ -1,8 +1,8 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../core/widgets/custom_app_bar_actions_item.dart';
+import '../../manager/scrolling_cubit/scrolling_cubit.dart';
 import 'desktop_app_bar_name.dart';
 
 class DesktopLayoutAppBar extends StatelessWidget {
@@ -12,6 +12,7 @@ class DesktopLayoutAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var cubit = context.read<ScrollingCubit>();
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
@@ -22,25 +23,25 @@ class DesktopLayoutAppBar extends StatelessWidget {
             CustomAppBarActionsItem(
               text: "Projects",
               onPressed: () {
-                log('Projects');
+                cubit.scrollTo(cubit.projectsKey);
               },
             ),
             CustomAppBarActionsItem(
               text: "About",
               onPressed: () {
-                log('about');
+                cubit.scrollTo(cubit.aboutKey);
               },
             ),
             CustomAppBarActionsItem(
               text: "Skills",
               onPressed: () {
-                log('Skills');
+                cubit.scrollTo(cubit.skillsKey);
               },
             ),
             CustomAppBarActionsItem(
               text: "Contact",
               onPressed: () {
-                log('contact');
+                cubit.scrollTo(cubit.connectKey);
               },
             ),
           ],
