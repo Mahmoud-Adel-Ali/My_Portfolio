@@ -42,7 +42,7 @@ class LetsConnectButtonBlocConsumer extends StatelessWidget {
                     text: 'SUBMIT',
                     onPressed: () {
                       if (cubit.formKey.currentState!.validate()) {
-                        cubit.sendMessage();
+                        cubit.sendUserMessage();
                       }
                     },
                   ),
