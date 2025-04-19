@@ -34,7 +34,6 @@ class MobileLayoutBody extends StatelessWidget {
             SkillsSectionForMobile(key: cubit.skillsKey),
             const CustomDivider(),
             LetsConnectSectionForMobile(key: cubit.connectKey),
-            const SizedBox(height: 32),
           ],
         ),
       ),
