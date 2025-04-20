@@ -27,12 +27,12 @@ class ProjectLinks extends StatelessWidget {
                   svgImage: Assets.iconsLinkedin,
                   link: project.linkedInLink!,
                 ),
-          project.linkedInLink == null
+          project.figmaLink == null
               ? const SizedBox()
               : CustomLinkButton(
                   text: 'Figma',
                   svgImage: Assets.iconsFigma,
-                  link: project.linkedInLink!,
+                  link: project.figmaLink!,
                 ),
         ],
       ),
