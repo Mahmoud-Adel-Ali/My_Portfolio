@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../../constants.dart';
 import '../../../../../core/utils/assets.dart';
+import '../../../../../core/widgets/animations/custom_fade_in_left.dart';
+import '../../../../../core/widgets/animations/custom_fade_in_right.dart';
 import '../../manager/scrolling_cubit/scrolling_cubit.dart';
 import 'about_section_for_desktop.dart';
 import 'all_projects_section_for_desktop.dart';
@@ -24,11 +27,19 @@ class DesktopLayoutBody extends StatelessWidget {
           const Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Expanded(flex: 2, child: NameAndTitleAndContactMeSection()),
+              Expanded(
+                flex: 2,
+                child: CustomFadeInRight(
+                    duration: Constants.duration,
+                    child: NameAndTitleAndContactMeSection()),
+              ),
               SizedBox(width: 32),
               Expanded(
-                child: HeaderImage(
-                  image: Assets.imagesMahmoud1,
+                child: CustomFadeInLeft(
+                  duration: Constants.duration,
+                  child: HeaderImage(
+                    image: Assets.imagesMahmoud1,
+                  ),
                 ),
               ),
             ],
