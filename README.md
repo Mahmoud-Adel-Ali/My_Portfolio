@@ -21,10 +21,21 @@ The primary goal of this project is to **present my skills, personal background,
 
 ## 📸 Preview
 
-> Add actual screenshots to `assets/preview-desktop.png` and `assets/preview-mobile.png` before publishing
+> Add actual screenshots to `assets/preview-desktop1.png`, `assets/preview-desktop2.png`, etc., and `assets/preview-mobile1.png`, `assets/preview-mobile2.png`, etc., before publishing.
 
-![Desktop Preview](assets/preview-desktop.png)
-![Mobile Preview](assets/preview-mobile.png)
+### Desktop Preview
+![Desktop Preview 1](assets/overview/desktop1.png)
+![Desktop Preview 2](assets/overview/desktop2.png)
+![Desktop Preview 3](assets/overview/desktop3.png)
+
+<br><br>
+
+### Mobile Preview
+![Mobile Preview 1](assets/overview/mobile1.jpg)
+![Mobile Preview 2](assets/overview/mobile2.jpg)
+![Mobile Preview 3](assets/overview/mobile3.jpg)
+![Mobile Preview 4](assets/overview/mobile4.jpg)
+![Mobile Preview 5](assets/overview/mobile5.jpg)
 
 ---
 
