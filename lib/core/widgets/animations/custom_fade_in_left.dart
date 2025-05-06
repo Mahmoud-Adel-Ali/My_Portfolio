@@ -21,4 +21,3 @@ class CustomFadeInLeft extends StatelessWidget {
     );
   }
 }
-
