@@ -24,13 +24,13 @@ The primary goal of this project is to **present my skills, personal background,
 > Add actual screenshots to `assets/preview-desktop1.png`, `assets/preview-desktop2.png`, etc., and `assets/preview-mobile1.png`, `assets/preview-mobile2.png`, etc., before publishing.
 
 ### Desktop Preview
+
 ![Desktop Preview 1](assets/overview/desktop1.png)
 ![Desktop Preview 2](assets/overview/desktop2.png)
 ![Desktop Preview 3](assets/overview/desktop3.png)
 
-<br><br>
-
 ### Mobile Preview
+
 ![Mobile Preview 1](assets/overview/mobile1.jpg)
 ![Mobile Preview 2](assets/overview/mobile2.jpg)
 ![Mobile Preview 3](assets/overview/mobile3.jpg)
