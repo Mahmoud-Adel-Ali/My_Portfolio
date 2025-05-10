@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utils/assets.dart';
-import 'about_info.dart';
-import 'header_image.dart';
+import '../../../../../../core/utils/assets.dart';
+import '../about_info.dart';
+import '../header_image.dart';
 
 class AboutSectionForDesktop extends StatelessWidget {
   const AboutSectionForDesktop({super.key});
