@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/size_config.dart';
 import '../../../../core/widgets/adaptive_layout_widget.dart';
-import 'widgets/desktop_app_bar_name.dart';
+import 'widgets/desktop/desktop_app_bar_name.dart';
 import 'widgets/custom_drawer.dart';
-import 'widgets/desktop_layout.dart';
+import 'widgets/desktop/desktop_layout.dart';
 import 'widgets/mobile_layout.dart';
 
 class ProtfolioView extends StatefulWidget {

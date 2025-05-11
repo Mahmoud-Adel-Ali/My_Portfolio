@@ -7,7 +7,7 @@ import '../../../../../core/widgets/animations/custom_fade_in_left.dart';
 import '../../../../../core/widgets/animations/custom_fade_in_right.dart';
 import '../../manager/scrolling_cubit/scrolling_cubit.dart';
 import 'desktop/about_section_for_desktop.dart';
-import 'all_projects_section_for_desktop.dart';
+import 'desktop/all_projects_section_for_desktop.dart';
 import 'custom_divider.dart';
 import 'header_image.dart';
 import 'lets_connect_section_for_desktop.dart';

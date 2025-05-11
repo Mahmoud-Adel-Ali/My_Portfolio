@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../manager/scrolling_cubit/scrolling_cubit.dart';
-import '../../manager/scrolling_cubit/scrolling_state.dart';
-import 'desktop_layout_app_bat.dart';
-import 'desktop_layout_body.dart';
+import '../../../manager/scrolling_cubit/scrolling_cubit.dart';
+import '../../../manager/scrolling_cubit/scrolling_state.dart';
+import '../desktop_layout_app_bat.dart';
+import '../desktop_layout_body.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
