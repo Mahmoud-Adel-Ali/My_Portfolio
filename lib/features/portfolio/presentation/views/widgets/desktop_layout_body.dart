@@ -10,9 +10,9 @@ import 'desktop/about_section_for_desktop.dart';
 import 'desktop/all_projects_section_for_desktop.dart';
 import 'custom_divider.dart';
 import 'header_image.dart';
-import 'lets_connect_section_for_desktop.dart';
+import 'desktop/lets_connect_section_for_desktop.dart';
 import 'name_and_title_and_contact_me_section.dart';
-import 'skills_section_for_desktop.dart';
+import 'desktop/skills_section_for_desktop.dart';
 
 class DesktopLayoutBody extends StatelessWidget {
   const DesktopLayoutBody({super.key});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/features/portfolio/presentation/views/widgets/project_item_for_desktop.dart';
+import 'package:my_portfolio/features/portfolio/presentation/views/widgets/desktop/project_item_for_desktop.dart';
 
 import '../../../../../../core/content/all_projects.dart';
 import '../all_projects_head_line.dart';

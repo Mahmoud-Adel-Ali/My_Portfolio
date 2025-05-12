@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'lets_connect_form.dart';
-import 'lets_connect_info.dart';
+import '../lets_connect_form.dart';
+import '../lets_connect_info.dart';
 
 class LetsConnectSectionForDesktop extends StatelessWidget {
   const LetsConnectSectionForDesktop({super.key});
