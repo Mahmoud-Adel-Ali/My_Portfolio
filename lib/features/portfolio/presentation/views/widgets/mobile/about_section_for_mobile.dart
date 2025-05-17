@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'about_info.dart';
+import '../about_info.dart';
+
 
 class AboutSectionForMobile extends StatelessWidget {
   const AboutSectionForMobile({super.key});

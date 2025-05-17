@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/features/portfolio/presentation/views/widgets/project_item_for_mobile.dart';
 
-import '../../../../../core/content/all_projects.dart';
-import 'all_projects_head_line.dart';
+import '../../../../../../core/content/all_projects.dart';
+import '../all_projects_head_line.dart';
+import 'project_item_for_mobile.dart';
 
 class AllProjectsSectionForMobile extends StatelessWidget {
   const AllProjectsSectionForMobile({super.key});
