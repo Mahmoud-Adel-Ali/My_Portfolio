@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../../constants.dart';
-import '../../../../../core/utils/assets.dart';
-import '../../../../../core/widgets/animations/custom_fade_in_left.dart';
-import '../../../../../core/widgets/animations/custom_fade_in_right.dart';
-import '../../manager/scrolling_cubit/scrolling_cubit.dart';
-import 'desktop/about_section_for_desktop.dart';
-import 'desktop/all_projects_section_for_desktop.dart';
-import 'custom_divider.dart';
-import 'header_image.dart';
-import 'desktop/lets_connect_section_for_desktop.dart';
-import 'name_and_title_and_contact_me_section.dart';
-import 'desktop/skills_section_for_desktop.dart';
+import '../../../../../../constants.dart';
+import '../../../../../../core/utils/assets.dart';
+import '../../../../../../core/widgets/animations/custom_fade_in_left.dart';
+import '../../../../../../core/widgets/animations/custom_fade_in_right.dart';
+import '../../../manager/scrolling_cubit/scrolling_cubit.dart';
+import 'about_section_for_desktop.dart';
+import 'all_projects_section_for_desktop.dart';
+import '../custom_divider.dart';
+import '../header_image.dart';
+import 'lets_connect_section_for_desktop.dart';
+import '../name_and_title_and_contact_me_section.dart';
+import 'skills_section_for_desktop.dart';
 
 class DesktopLayoutBody extends StatelessWidget {
   const DesktopLayoutBody({super.key});
