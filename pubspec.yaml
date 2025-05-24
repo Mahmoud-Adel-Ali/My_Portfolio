@@ -37,6 +37,7 @@ dependencies:
   flutter_dotenv: ^5.2.1
   flutter_svg: ^2.0.17
   mailer: ^6.4.1
+  rename: ^3.1.0
   url_launcher: ^6.3.1
 
 dev_dependencies:
