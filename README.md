@@ -5,7 +5,6 @@ The primary goal of this project is to **present my skills, personal background,
 
 > 🔥 This portfolio reflects who I am as a developer — my design choices, animations, state management skills, and use of APIs and tools.
 
-[🌐 View Live Demo](https://mahmoud-adel-ali.github.io/My-Portfolio/)
 
 ---
 
@@ -72,12 +71,3 @@ This portfolio is based on a developer-focused UI kit from Figma:
 
 🔗 [View the Figma Design](https://www.figma.com/design/nr1tqLyTv12dw3XQns6wDr/Portfolio-for-Developers--Community-?node-id=0-1&t=xjQHgFdZg8JS3BlJ-1)
 
----
-
-## 🚀 Deployment
-
-- Deployed via **GitHub Pages**
-- Built with:
-
-```bash
-flutter build web --release --base-href="/My-Portfolio/"
