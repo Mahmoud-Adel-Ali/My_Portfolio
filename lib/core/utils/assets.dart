@@ -60,6 +60,8 @@ class Assets {
 
   static const String imagesPaymentFeature = "assets/images/payment_feature.png";
 
+  static const String imagesPharmAssist = "assets/images/pharm_assist.png";
+
   static const String imagesPortfolio = "assets/images/portfolio.png";
 
   static const String imagesQuickMart = "assets/images/quick_mart.png";

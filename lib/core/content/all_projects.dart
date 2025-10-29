@@ -2,6 +2,22 @@ import '../models/project_model.dart';
 import '../utils/assets.dart';
 
 List<ProjectModel> allProjects = [
+  // PharmAssist
+  ProjectModel(
+    name: 'PharmAssist',
+    subName: '💊 Smart Drug & Prescription Assistant',
+    description:
+        "PharmAssist is a cross-platform Flutter application that helps users search for drugs, view detailed information, manage search history, and scan prescriptions. It follows a clean, modular, feature-based architecture using Bloc/Cubit for state management, Dio for networking, Hive and SharedPreferences for local storage, and GetIt for dependency injection. The app includes authentication flows, prescription scanning via Image Picker & Cropper, animated UI using Lottie, and robust error handling. Designed with scalability and maintainability in mind, PharmAssist aims to simplify healthcare access and digital prescription management.\n\n🏆 Ranked 1st in Graduation Projects, Sohag University (Jun 2025).\n\nTech: Flutter, Bloc/Cubit, Dio, Hive, Shared Preferences, GetIt, GoRouter, Lottie, Image Picker, Image Cropper, Dartz, Cached Network Image, Awesome Dialog, and modern clean architecture.",
+    year: 2025,
+    image: Assets.imagesPharmAssist,
+    gitHubLink: 'https://github.com/Mahmoud-Adel-Ali/pharmassist',
+    isCompleted: true,
+    figmaLink:
+        'https://www.figma.com/design/placeholder/PharmAssist-App-Design?node-id=0-1',
+    linkedInLink:
+        'https://www.linkedin.com/posts/mahmoud-adel-ali-mohamed_flutter-healthcare-app-pharmassist-activity-0000000000000000/',
+  ),
+
   //ALQUDRAH Dashboard App
   ProjectModel(
     name: 'ALQUDRAH',
@@ -16,6 +32,7 @@ List<ProjectModel> allProjects = [
     //   linkedInLink:
     //       'https://www.linkedin.com/posts/mahmoud-adel-ali-mohamed_flutter-dashboard-desktopapp-activity-XXXXXX',
   ),
+
   //Chat-Bot
   ProjectModel(
     name: 'Open-AI-Chat',
