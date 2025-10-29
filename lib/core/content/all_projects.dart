@@ -2,6 +2,20 @@ import '../models/project_model.dart';
 import '../utils/assets.dart';
 
 List<ProjectModel> allProjects = [
+  //ALQUDRAH Dashboard App
+  ProjectModel(
+    name: 'ALQUDRAH',
+    subName: '🧭 Smart Business Dashboard - Flutter Web & Desktop',
+    description:
+        "ALQUDRAH is a professional Flutter-based admin dashboard crafted for enterprise-level business management. Designed to run seamlessly across web and desktop, it provides comprehensive tools for managing products, customers, invoices, employees, and settings—all within a clean, responsive interface. The app follows a layered architecture powered by Provider and GetIt for dependency injection, ensuring modularity and scalability. With features like file and image handling, PDF generation, charts, localization, and persistent local storage using Hive, ALQUDRAH delivers a robust and efficient management experience tailored for modern businesses.\n\n(Word count: ~110, optimized for GitHub, LinkedIn, or portfolio use.)",
+    year: 2025,
+    image: Assets.imagesAlQudrah,
+    gitHubLink: 'https://github.com/Mahmoud-Adel-Ali/Metro_Nic_Dashboard',
+    isCompleted: true,
+    // figmaLink: 'https://www.figma.com/design/your-alqudrah-design-link',
+    //   linkedInLink:
+    //       'https://www.linkedin.com/posts/mahmoud-adel-ali-mohamed_flutter-dashboard-desktopapp-activity-XXXXXX',
+  ),
   //Chat-Bot
   ProjectModel(
     name: 'Open-AI-Chat',

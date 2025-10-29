@@ -42,6 +42,8 @@ class Assets {
 
   static const String iconsVector = "assets/icons/Vector.svg";
 
+  static const String imagesAlQudrah = "assets/images/alQudrah.png";
+
   static const String imagesChatApp = "assets/images/chat-app.png";
 
   static const String imagesDocLink = "assets/images/doc_link.png";
@@ -57,6 +59,8 @@ class Assets {
   static const String imagesOpenAi = "assets/images/open_ai.png";
 
   static const String imagesPaymentFeature = "assets/images/payment_feature.png";
+
+  static const String imagesPortfolio = "assets/images/portfolio.png";
 
   static const String imagesQuickMart = "assets/images/quick_mart.png";
 

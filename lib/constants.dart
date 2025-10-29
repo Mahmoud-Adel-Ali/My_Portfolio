@@ -10,5 +10,5 @@ abstract class Constants {
   static const String facebookUrl =
       "https://www.facebook.com/profile.php?id=100035383894778";
   static const String resumeUrl =
-      "https://docs.google.com/document/d/1EtIy3I7J6IlfWPkcI456voSqIjcXYi5M/edit?usp=sharing&ouid=117337474611787358178&rtpof=true&sd=true";
+      "https://docs.google.com/document/d/1LBhc0mDu__ficWKm97PJzBHpyu-uThws/edit?usp=sharing&ouid=117337474611787358178&rtpof=true&sd=true";
 }
