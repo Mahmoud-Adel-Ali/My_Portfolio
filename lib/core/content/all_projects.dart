@@ -18,19 +18,19 @@ List<ProjectModel> allProjects = [
         'https://www.linkedin.com/posts/mahmoud-adel-ali-mohamed_flutter-healthcare-app-pharmassist-activity-0000000000000000/',
   ),
 
-  //* ALQUDRAH Dashboard App
+//* ALQUDRAH Dashboard App
   ProjectModel(
     name: 'ALQUDRAH',
     subName: '🧭 Smart Business Dashboard - Flutter Web & Desktop',
     description:
-        "ALQUDRAH is a professional Flutter-based admin dashboard crafted for enterprise-level business management. Designed to run seamlessly across web and desktop, it provides comprehensive tools for managing products, customers, invoices, employees, and settings—all within a clean, responsive interface. The app follows a layered architecture powered by Provider and GetIt for dependency injection, ensuring modularity and scalability. With features like file and image handling, PDF generation, charts, localization, and persistent local storage using Hive, ALQUDRAH delivers a robust and efficient management experience tailored for modern businesses.\n\n(Word count: ~110, optimized for GitHub, LinkedIn, or portfolio use.)",
+        "ALQUDRAH is a professional Flutter-based admin dashboard designed for enterprise-level business management across web and desktop platforms. It offers a comprehensive suite of tools for managing products, customers, invoices, employees, and system settings—all within a clean, responsive, and data-driven interface. The app follows a layered architecture with Provider for state management and GetIt for dependency injection, ensuring scalability and modularity. Key capabilities include file and image handling, PDF report generation, dynamic charts, localization support, and persistent data storage via Hive. ALQUDRAH delivers a seamless and efficient management experience tailored for modern businesses.\n\nTech: Flutter, Provider, GetIt, Hive, Syncfusion Charts, File Picker, PDF Generation, Shared Preferences, Flutter Web & Desktop, Responsive Layouts, and Localization (Arabic & English).",
     year: 2025,
     image: Assets.imagesAlQudrah,
     gitHubLink: 'https://github.com/Mahmoud-Adel-Ali/Metro_Nic_Dashboard',
     isCompleted: true,
-    //* figmaLink: 'https://www.figma.com/design/your-alqudrah-design-link',
-    //*   linkedInLink:
-    //*       'https://www.linkedin.com/posts/mahmoud-adel-ali-mohamed_flutter-dashboard-desktopapp-activity-XXXXXX',
+    // figmaLink: 'https://www.figma.com/design/your-alqudrah-design-link',
+    // linkedInLink:
+    //     'https://www.linkedin.com/posts/mahmoud-adel-ali-mohamed_flutter-dashboard-desktopapp-activity-XXXXXX',
   ),
 
   //* Creativa App
