@@ -46,6 +46,8 @@ class Assets {
 
   static const String imagesChatApp = "assets/images/chat-app.png";
 
+  static const String imagesCreativa = "assets/images/creativa.png";
+
   static const String imagesDocLink = "assets/images/doc_link.png";
 
   static const String imagesInstagram = "assets/images/instagram.png";

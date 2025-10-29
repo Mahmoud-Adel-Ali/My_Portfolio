@@ -33,6 +33,22 @@ List<ProjectModel> allProjects = [
     //       'https://www.linkedin.com/posts/mahmoud-adel-ali-mohamed_flutter-dashboard-desktopapp-activity-XXXXXX',
   ),
 
+// Creativa App
+  ProjectModel(
+    name: 'Creativa App',
+    subName: '🎓 Multi-Role Educational Platform',
+    description:
+        "Creativa App is a comprehensive, multi-role educational platform built using Flutter, featuring three main components — Admin Dashboard, Instructor App, and User App — designed to streamline online learning and course management. It empowers students to explore and enroll in courses, instructors to manage and track their classes, and admins to oversee all system activity. With provider-based state management, GetIt for dependency injection, and a clean modular architecture, the app delivers a robust, scalable, and visually engaging experience through smooth animations and multilingual support (Arabic & English). Developed with accessibility and scalability in mind.\n\n🏆 Winner, Flutter Hackathon by Creativa (Sep 2025) – 1st Place.\n\nTech: Flutter, Provider, GetIt, Dartz, Flutter Intl, Shared Preferences, Cached Network Image, Image Picker, Lottie, Carousel Slider, Flutter Toast, HTTP, Laravel API backend, and responsive UI design.",
+    year: 2025,
+    image: Assets.imagesCreativa,
+    gitHubLink: 'https://github.com/Mahmoud-Adel-Ali/Creativa_App',
+    isCompleted: true,
+    figmaLink:
+        'https://www.figma.com/design/OXHTNIsJK9byeYLbukghHC/Creativa--Project?node-id=127-1156&t=rSC6zG4PUcFJVYa6-1',
+    linkedInLink:
+        'https://www.linkedin.com/posts/mahmoud-adel-ali-mohamed_hackathon-flutter-mobileapp-activity-7384115777026613248-1a2M?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4c_DcBi2fNcI8zLTk-rF1cY0_yKNzytg8',
+  ),
+
   //Chat-Bot
   ProjectModel(
     name: 'Open-AI-Chat',
