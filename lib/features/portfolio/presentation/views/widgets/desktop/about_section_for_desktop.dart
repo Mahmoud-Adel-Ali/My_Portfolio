@@ -12,6 +12,7 @@ class AboutSectionForDesktop extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 32.0),
       child: Row(
+        spacing: 32,
         children: [
           Expanded(
             child: HeaderImage(

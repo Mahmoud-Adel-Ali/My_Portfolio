@@ -4,7 +4,7 @@ class HeaderImage extends StatelessWidget {
   const HeaderImage({
     super.key,
     required this.image,
-    this.aspectRatio = 0.8,
+    this.aspectRatio = 1,
   });
   final String image;
   final double aspectRatio;
@@ -18,6 +18,7 @@ class HeaderImage extends StatelessWidget {
             borderRadius: BorderRadius.circular(24),
             image: DecorationImage(
               image: AssetImage(image),
+              fit: BoxFit.cover,
             ),
           ),
         ),
