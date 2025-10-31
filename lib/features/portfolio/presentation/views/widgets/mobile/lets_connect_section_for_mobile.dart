@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../lets_connect_form.dart';
 import '../lets_connect_info.dart';
 
 class LetsConnectSectionForMobile extends StatelessWidget {
@@ -14,7 +13,7 @@ class LetsConnectSectionForMobile extends StatelessWidget {
         spacing: 32,
         children: [
           LetsConnectInfo(),
-          LetsConnectForm(),
+          // LetsConnectForm(),
         ],
       ),
     );
