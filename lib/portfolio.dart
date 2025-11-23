@@ -22,7 +22,7 @@ class Portfolio extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Mahmoud-Adel-Ali',
         debugShowCheckedModeBanner: false,
         theme: ThemeData.dark(useMaterial3: true),
         home: const ProtfolioView(),
