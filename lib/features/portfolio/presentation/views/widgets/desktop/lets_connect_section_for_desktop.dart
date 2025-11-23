@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../lets_connect_form.dart';
 import '../lets_connect_info.dart';
 
 class LetsConnectSectionForDesktop extends StatelessWidget {
@@ -15,7 +14,7 @@ class LetsConnectSectionForDesktop extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(child: LetsConnectInfo()),
-          Expanded(child: LetsConnectForm()),
+          // Expanded(child: LetsConnectForm()),
         ],
       ),
     );

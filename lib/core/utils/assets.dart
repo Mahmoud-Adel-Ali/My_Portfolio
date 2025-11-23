@@ -71,5 +71,7 @@ class Assets {
   static const String imagesResponsiveDashboard = "assets/images/responsive_dashboard.png";
 
   static const String imagesTicTacToe = "assets/images/tic_tac_toe.png";
+
+  static const String imagesWebIcon = "assets/images/web_icon.png";
 }
 
