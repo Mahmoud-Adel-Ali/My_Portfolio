@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../utils/app_colors.dart';
 import '../utils/app_styles.dart';
 
-class CustomAppBarActionsItem extends StatelessWidget {
+class CustomAppBarActionsItem extends StatefulWidget {
   const CustomAppBarActionsItem({
     super.key,
     required this.text,
@@ -14,20 +14,42 @@ class CustomAppBarActionsItem extends StatelessWidget {
   final Function()? onPressed;
 
   @override
+  State<CustomAppBarActionsItem> createState() =>
+      _CustomAppBarActionsItemState();
+}
+
+class _CustomAppBarActionsItemState extends State<CustomAppBarActionsItem> {
+  bool isHovered = false;
+  @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: onPressed,
-      style: ElevatedButton.styleFrom(
-        backgroundColor: AppColors.black,
-        foregroundColor: AppColors.white,
-        shape: const StadiumBorder(),
-        elevation: 2,
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 16),
-        minimumSize: Size.zero,
-      ),
-      child: Text(
-        text,
-        style: AppStyles.semiBold16(context),
+    return InkWell(
+      onTap: widget.onPressed,
+      onHover: (value) {
+        isHovered = value;
+        setState(() {});
+      },
+      child: Column(
+        children: [
+          Text(
+            widget.text,
+            style: AppStyles.semiBold16(context).copyWith(
+              color: isHovered ? AppColors.main : AppColors.white,
+            ),
+          ),
+          const SizedBox(height: 4),
+          Visibility(
+            maintainAnimation: true,
+            maintainState: true,
+            maintainSize: true,
+            visible: isHovered,
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 200),
+              height: 2,
+              width: 24,
+              color: AppColors.main,
+            ),
+          ),
+        ],
       ),
     );
   }

@@ -6,7 +6,6 @@ import '../../../../../../core/utils/app_styles.dart';
 import '../../../manager/scrolling_cubit/scrolling_cubit.dart';
 import 'custom_drawer_item.dart';
 
-
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
 
@@ -19,11 +18,16 @@ class CustomDrawer extends StatelessWidget {
         child: Column(
           children: [
             DrawerHeader(
-              child: Center(
-                child: Text(
-                  'Mahmoud Adel.',
-                  style: AppStyles.regular40(context),
-                ),
+              child: Column(
+                spacing: 8,
+                children: [
+                  const SizedBox(),
+                  Expanded(child: FittedBox(child: FlutterLogo())),
+                  Text(
+                    'Mahmoud Adel',
+                    style: AppStyles.regular32(context),
+                  ),
+                ],
               ),
             ),
             DrawerItems(),
@@ -35,9 +39,7 @@ class CustomDrawer extends StatelessWidget {
 }
 
 class DrawerItems extends StatelessWidget {
-  const DrawerItems({
-    super.key,
-  });
+  const DrawerItems({super.key});
 
   @override
   Widget build(BuildContext context) {

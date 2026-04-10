@@ -10,4 +10,12 @@ class SizeConfig {
     height = MediaQuery.sizeOf(context).height;
     width = MediaQuery.sizeOf(context).width;
   }
+
+  static bool isDesktop(BuildContext context) =>
+      MediaQuery.sizeOf(context).width >= desktop;
+  static bool isTablet(BuildContext context) =>
+      MediaQuery.sizeOf(context).width >= tablet &&
+      MediaQuery.sizeOf(context).width < desktop;
+  static bool isMobile(BuildContext context) =>
+      MediaQuery.sizeOf(context).width < tablet;
 }

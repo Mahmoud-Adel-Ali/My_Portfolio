@@ -24,26 +24,28 @@ class _DashBoardViewState extends State<ProtfolioView> {
         key: scaffoldKey,
         drawer: const CustomDrawer(),
         backgroundColor: AppColors.background,
-        appBar: MediaQuery.sizeOf(context).width <= SizeConfig.tablet
-            ? AppBar(
-                title: DesktopAppBarName(),
-                backgroundColor: AppColors.background,
-                flexibleSpace: FlexibleSpaceBar(
-                  background: Container(color: AppColors.background),
-                ),
-                leading: IconButton(
-                    onPressed: () {
-                      scaffoldKey.currentState!.openDrawer();
-                    },
-                    icon: const Icon(Icons.menu)),
-              )
-            : null,
+        appBar: SizeConfig.isMobile(context) ? _buildAppBar() : null,
         body: AdaptiveLayoutWidget(
           desktopLayout: (context) => DesktopLayout(),
           tabletLayout: (context) => DesktopLayout(),
           mobileLayout: (context) => MobileLayout(),
         ),
       ),
+    );
+  }
+
+  AppBar _buildAppBar() {
+    return AppBar(
+      title: DesktopAppBarName(),
+      backgroundColor: AppColors.background,
+      flexibleSpace: FlexibleSpaceBar(
+        background: Container(color: AppColors.background),
+      ),
+      leading: IconButton(
+          onPressed: () {
+            scaffoldKey.currentState!.openDrawer();
+          },
+          icon: const Icon(Icons.menu_outlined)),
     );
   }
 }
