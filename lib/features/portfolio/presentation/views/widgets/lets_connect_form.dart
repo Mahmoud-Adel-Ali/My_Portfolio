@@ -5,7 +5,7 @@ import 'package:my_portfolio/core/widgets/custom_text_form_field.dart';
 import '../../manager/connect_cubit/connect_cubit.dart';
 import '../../manager/connect_cubit/connect_state.dart';
 import '../../manager/functions/validators.dart';
-import 'lets_connect_button_bolc_consumer.dart';
+import 'lets_connect_button_bloc_consumer.dart';
 
 class LetsConnectForm extends StatelessWidget {
   const LetsConnectForm({super.key});

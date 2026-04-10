@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/models/project_model.dart';
-import '../../../../../core/utils/app_colors.dart';
-import '../../../../../core/utils/app_styles.dart';
+import '../../../../../core/entities/project_entity.dart';
+import '../../../../../core/theme/app_colors.dart';
+import '../../../../../core/theme/app_styles.dart';
 import 'project_image.dart';
 
 class ProjectImageCard extends StatelessWidget {
-  final ProjectModel project;
+  final ProjectEntity project;
   final double? height;
 
   const ProjectImageCard({

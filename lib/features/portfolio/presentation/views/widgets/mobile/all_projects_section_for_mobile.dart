@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../../core/content/all_projects.dart';
+import '../../../../data/data_sources/static_data_source.dart';
 import '../all_projects_head_line.dart';
 import 'project_item_for_mobile.dart';
 
@@ -16,10 +16,10 @@ class AllProjectsSectionForMobile extends StatelessWidget {
         ListView.builder(
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
-          itemCount: allProjects.length,
+          itemCount: StaticDataSource.allProjects.length,
           itemBuilder: (context, index) {
             return ProjectItemForMobile(
-              project: allProjects[index],
+              project: StaticDataSource.allProjects[index],
             );
           },
         ),

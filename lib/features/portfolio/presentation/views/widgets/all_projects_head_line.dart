@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utils/app_styles.dart';
+import '../../../../../core/theme/app_styles.dart';
 
 class AllProjectsHeadLine extends StatelessWidget {
   const AllProjectsHeadLine({super.key});

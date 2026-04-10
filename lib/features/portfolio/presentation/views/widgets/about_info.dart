@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../constants.dart';
-import '../../../../../core/utils/app_styles.dart';
+import '../../../../../core/constants/app_constants.dart';
+import '../../../../../core/theme/app_styles.dart';
 import '../../../../../core/utils/functions/open_url.dart';
 import '../../../../../core/widgets/custom_button.dart';
 import 'linked_in_and_github_buttons.dart';
@@ -42,7 +42,7 @@ class AboutInfo extends StatelessWidget {
             CustomButton(
               text: "DOWNLOAD RESUME",
               onPressed: () {
-                openUrl(context, Constants.resumeUrl);
+                openUrl(context, AppConstants.resumeUrl);
               },
             ),
             LinkedInAndGitHubButtons(),

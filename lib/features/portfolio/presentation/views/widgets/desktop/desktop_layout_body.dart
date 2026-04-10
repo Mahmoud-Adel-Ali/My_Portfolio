@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../../../constants.dart';
+import '../../../../../../core/constants/app_constants.dart';
 import '../../../../../../core/utils/assets.dart';
 import '../../../../../../core/widgets/animations/custom_fade_in_left.dart';
 import '../../../../../../core/widgets/animations/custom_fade_in_right.dart';
@@ -30,13 +30,13 @@ class DesktopLayoutBody extends StatelessWidget {
               Expanded(
                 flex: 2,
                 child: CustomFadeInRight(
-                    duration: Constants.duration,
+                    duration: AppConstants.duration,
                     child: NameAndTitleAndContactMeSection()),
               ),
               SizedBox(width: 32),
               Expanded(
                 child: CustomFadeInLeft(
-                  duration: Constants.duration,
+                  duration: AppConstants.duration,
                   child: HeaderImage(
                     image: Assets.imagesMahmoud1,
                   ),

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../../core/utils/app_styles.dart';
+import '../../../../../core/theme/app_styles.dart';
 import '../../../../../core/widgets/custom_button.dart';
+import '../../manager/scrolling_cubit/scrolling_cubit.dart';
 import 'linked_in_and_github_buttons.dart';
 
 class NameAndTitleAndContactMeSection extends StatelessWidget {
@@ -23,16 +25,19 @@ class NameAndTitleAndContactMeSection extends StatelessWidget {
         SizedBox(
           width: double.infinity,
           child: SelectableText(
-            "Sr Mobile App Developer | iOS/Android | Flutter | React Native | UI/UX Expert | 2+ Years Building Scalable.\nPixel-Perfect Apps with Firebase, REST APIs & Bloc/Redux",
+            "Flutter Mobile Developer | iOS & Android | Building scalable, pixel-perfect apps using Firebase, REST APIs, and BLoC with strong focus on performance and user experience",
             style: AppStyles.regular18(context),
           ),
         ),
-        SizedBox(height: 16),
+        SizedBox(height: 32),
         Row(
           children: [
             CustomButton(
               text: "Contact Me",
-              onPressed: () {},
+              onPressed: () {
+                var cubit = context.read<ScrollingCubit>();
+                cubit.scrollTo(cubit.connectKey);
+              },
             ),
             SizedBox(width: 8),
             LinkedInAndGitHubButtons(),

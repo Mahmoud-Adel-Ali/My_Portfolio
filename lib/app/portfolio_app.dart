@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'core/utils/size_config.dart';
-import 'features/portfolio/presentation/manager/connect_cubit/connect_cubit.dart';
-import 'features/portfolio/presentation/manager/scrolling_cubit/scrolling_cubit.dart';
-import 'features/portfolio/presentation/views/protfolio_view.dart';
+import '../core/theme/app_theme.dart';
+import '../core/utils/size_config.dart';
+import '../features/portfolio/presentation/manager/connect_cubit/connect_cubit.dart';
+import '../features/portfolio/presentation/manager/scrolling_cubit/scrolling_cubit.dart';
+import '../features/portfolio/presentation/views/portfolio_view.dart';
 
-class Portfolio extends StatelessWidget {
-  const Portfolio({super.key});
+class PortfolioApp extends StatelessWidget {
+  const PortfolioApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,8 +25,8 @@ class Portfolio extends StatelessWidget {
       child: MaterialApp(
         title: 'Mahmoud-Adel-Ali',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData.dark(useMaterial3: true),
-        home: const ProtfolioView(),
+        theme: AppTheme.darkTheme,
+        home: const PortfolioView(),
       ),
     );
   }

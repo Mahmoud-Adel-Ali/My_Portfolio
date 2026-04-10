@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/constants.dart';
+import 'package:my_portfolio/core/constants/app_constants.dart';
 import 'package:my_portfolio/core/utils/functions/open_url.dart';
 
 import '../../../../../core/utils/assets.dart';
@@ -18,13 +18,13 @@ class LinkedInAndGitHubButtons extends StatelessWidget {
           CustomIconButton(
             svgImage: Assets.iconsLinkedin,
             onPressed: () {
-              openUrl(context, Constants.linkedInUrl);
+              openUrl(context, AppConstants.linkedInUrl);
             },
           ),
           CustomIconButton(
             svgImage: Assets.iconsGithub,
             onPressed: () {
-              openUrl(context, Constants.githubUrl);
+              openUrl(context, AppConstants.githubUrl);
             },
           ),
         ],

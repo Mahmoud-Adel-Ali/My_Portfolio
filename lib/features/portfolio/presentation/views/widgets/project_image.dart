@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/models/project_model.dart';
+import '../../../../../core/entities/project_entity.dart';
 
 class ProjectImage extends StatelessWidget {
   const ProjectImage({
@@ -8,7 +8,7 @@ class ProjectImage extends StatelessWidget {
     required this.project,
   });
 
-  final ProjectModel project;
+  final ProjectEntity project;
 
   @override
   Widget build(BuildContext context) {

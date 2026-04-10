@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../utils/app_colors.dart';
-import '../utils/app_styles.dart';
+import '../theme/app_colors.dart';
+import '../theme/app_styles.dart';
 import '../utils/functions/open_url.dart';
 
 class CustomLinkButton extends StatelessWidget {
@@ -21,33 +21,31 @@ class CustomLinkButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Flexible(
       child: TextButton(
-        onPressed: () {
-          openUrl(context, link);
-        },
+        onPressed: () => openUrl(context, link),
         style: TextButton.styleFrom(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           tapTargetSize: MaterialTapTargetSize.shrinkWrap,
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
           spacing: 4,
           children: [
-            Flexible(
-              child: ColorFiltered(
-                colorFilter: ColorFilter.mode(
-                  AppColors.main,
-                  BlendMode.srcIn,
-                ),
-                child: SvgPicture.asset(svgImage),
+            ColorFiltered(
+              colorFilter: ColorFilter.mode(
+                AppColors.main,
+                BlendMode.srcIn,
+              ),
+              child: SvgPicture.asset(
+                svgImage,
+                height: 22,
+                width: 22,
               ),
             ),
             Text(
               text,
-              overflow: TextOverflow.ellipsis,
-              textAlign: TextAlign.center,
-              style: AppStyles.bold16(context).copyWith(
+              style: AppStyles.semiBold16(context).copyWith(
                 color: AppColors.main,
-                decoration: TextDecoration.underline,
               ),
             ),
           ],

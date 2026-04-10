@@ -44,6 +44,8 @@ class Assets {
 
   static const String imagesAlQudrah = "assets/images/alQudrah.png";
 
+  static const String imagesBedouinTrails = "assets/images/bedouin_trails.png";
+
   static const String imagesChatApp = "assets/images/chat-app.png";
 
   static const String imagesCreativa = "assets/images/creativa.png";
@@ -51,6 +53,8 @@ class Assets {
   static const String imagesDocLink = "assets/images/doc_link.png";
 
   static const String imagesInstagram = "assets/images/instagram.png";
+
+  static const String imagesLockersSystem = "assets/images/lockers_system.png";
 
   static const String imagesMahmoud1 = "assets/images/mahmoud1.png";
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:my_portfolio/core/utils/app_styles.dart';
+import 'package:my_portfolio/core/theme/app_styles.dart';
 
-import '../../../../../core/utils/app_colors.dart';
+import '../../../../../core/theme/app_colors.dart';
 import '../../../data/models/skill_model.dart';
 
 class CustomSkillItem extends StatelessWidget {

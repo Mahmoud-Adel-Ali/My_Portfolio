@@ -1,77 +1,77 @@
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
+import '../constants/app_constants.dart';
 import 'app_colors.dart';
-import 'size_config.dart';
+import '../utils/size_config.dart';
 
 abstract class AppStyles {
   static TextStyle medium14(BuildContext context) => TextStyle(
         fontWeight: FontWeight.w500,
         fontSize: getResponsiveFontsize(context, fontsize: 14),
-        fontFamily: Constants.manropeFontFamily,
+        fontFamily: AppConstants.manropeFontFamily,
         color: AppColors.white,
       );
 
   static TextStyle medium16Inter(BuildContext context) => TextStyle(
         fontWeight: FontWeight.w500,
         fontSize: getResponsiveFontsize(context, fontsize: 16),
-        fontFamily: Constants.interFontFamily,
+        fontFamily: AppConstants.interFontFamily,
         color: AppColors.white,
       );
 
   static TextStyle medium16Manrope(BuildContext context) => TextStyle(
         fontWeight: FontWeight.w500,
         fontSize: getResponsiveFontsize(context, fontsize: 16),
-        fontFamily: Constants.manropeFontFamily,
+        fontFamily: AppConstants.manropeFontFamily,
         color: AppColors.white,
       );
 
   static TextStyle semiBold16(BuildContext context) => TextStyle(
         fontWeight: FontWeight.w600,
         fontSize: getResponsiveFontsize(context, fontsize: 16),
-        fontFamily: Constants.manropeFontFamily,
+        fontFamily: AppConstants.manropeFontFamily,
         color: AppColors.white,
       );
 
   static TextStyle bold16(BuildContext context) => TextStyle(
         fontWeight: FontWeight.w700,
         fontSize: getResponsiveFontsize(context, fontsize: 16),
-        fontFamily: Constants.manropeFontFamily,
+        fontFamily: AppConstants.manropeFontFamily,
         color: AppColors.black,
       );
 
   static TextStyle regular18(BuildContext context) => TextStyle(
         fontWeight: FontWeight.w400,
         fontSize: getResponsiveFontsize(context, fontsize: 18),
-        fontFamily: Constants.manropeFontFamily,
+        fontFamily: AppConstants.manropeFontFamily,
         color: AppColors.grey,
       );
 
   static TextStyle medium32(BuildContext context) => TextStyle(
         fontWeight: FontWeight.w500,
         fontSize: getResponsiveFontsize(context, fontsize: 32),
-        fontFamily: Constants.manropeFontFamily,
+        fontFamily: AppConstants.manropeFontFamily,
         color: AppColors.white,
       );
 
   static TextStyle regular32(BuildContext context) => TextStyle(
         fontWeight: FontWeight.w400,
         fontSize: getResponsiveFontsize(context, fontsize: 32),
-        fontFamily: Constants.bebasNeueFontFamily,
+        fontFamily: AppConstants.bebasNeueFontFamily,
         color: AppColors.white,
       );
 
   static TextStyle regular40(BuildContext context) => TextStyle(
         fontWeight: FontWeight.w400,
         fontSize: getResponsiveFontsize(context, fontsize: 40),
-        fontFamily: Constants.bebasNeueFontFamily,
+        fontFamily: AppConstants.bebasNeueFontFamily,
         color: AppColors.white,
       );
 
   static TextStyle regular50(BuildContext context) => TextStyle(
         fontWeight: FontWeight.w400,
         fontSize: getResponsiveFontsize(context, fontsize: 50),
-        fontFamily: Constants.bebasNeueFontFamily,
+        fontFamily: AppConstants.bebasNeueFontFamily,
         color: AppColors.white,
       );
 

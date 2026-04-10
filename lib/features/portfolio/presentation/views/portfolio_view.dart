@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/utils/app_colors.dart';
+import '../../../../core/theme/app_colors.dart';
 import '../../../../core/utils/size_config.dart';
 import '../../../../core/widgets/adaptive_layout_widget.dart';
 import 'widgets/desktop/desktop_app_bar_name.dart';
@@ -8,14 +8,14 @@ import 'widgets/desktop/desktop_layout.dart';
 import 'widgets/mobile/custom_drawer.dart';
 import 'widgets/mobile/mobile_layout.dart';
 
-class ProtfolioView extends StatefulWidget {
-  const ProtfolioView({super.key});
+class PortfolioView extends StatefulWidget {
+  const PortfolioView({super.key});
 
   @override
-  State<ProtfolioView> createState() => _DashBoardViewState();
+  State<PortfolioView> createState() => _PortfolioViewState();
 }
 
-class _DashBoardViewState extends State<ProtfolioView> {
+class _PortfolioViewState extends State<PortfolioView> {
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class _DashBoardViewState extends State<ProtfolioView> {
 
   AppBar _buildAppBar() {
     return AppBar(
-      title: DesktopAppBarName(),
+      title: const DesktopAppBarName(),
       backgroundColor: AppColors.background,
       flexibleSpace: FlexibleSpaceBar(
         background: Container(color: AppColors.background),

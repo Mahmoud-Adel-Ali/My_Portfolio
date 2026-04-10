@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/core/utils/app_colors.dart';
+import 'package:my_portfolio/core/theme/app_colors.dart';
 
 void showMessage(
   BuildContext context, {

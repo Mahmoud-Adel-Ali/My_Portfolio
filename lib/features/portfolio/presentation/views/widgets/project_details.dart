@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/models/project_model.dart';
-import '../../../../../core/utils/app_styles.dart';
+import '../../../../../core/entities/project_entity.dart';
+import '../../../../../core/theme/app_styles.dart';
 import 'project_details_item.dart';
 import 'project_links.dart';
 
 class ProjectDetails extends StatelessWidget {
   const ProjectDetails({super.key, required this.project});
-  final ProjectModel project;
+  final ProjectEntity project;
   @override
   Widget build(BuildContext context) {
     return Column(

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/features/portfolio/presentation/views/widgets/custom_skill_item.dart';
 
-import '../../../../../core/utils/app_styles.dart';
-import '../../../data/content/my_skills.dart';
+import '../../../../../core/theme/app_styles.dart';
+import '../../../data/data_sources/static_data_source.dart';
+
 
 class SkillsBody extends StatelessWidget {
   const SkillsBody({super.key});
@@ -25,9 +26,9 @@ class SkillsBody extends StatelessWidget {
           spacing: 8,
           runSpacing: 8,
           children: List.generate(
-            mySkills.length,
+            StaticDataSource.mySkills.length,
             (index) => CustomSkillItem(
-              skill: mySkills[index],
+              skill: StaticDataSource.mySkills[index],
             ),
           ),
         ),
