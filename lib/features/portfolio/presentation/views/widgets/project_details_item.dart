@@ -9,30 +9,40 @@ class ProjectDetailsItem extends StatelessWidget {
     super.key,
     required this.title,
     this.trilling,
+    this.labelsColor,
   });
   final String title;
   final String? trilling;
+  final Color? labelsColor;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        border: Border(
-          bottom: BorderSide(color: AppColors.black2, width: 2),
-        ),
-      ),
-      child: ListTile(
-        title: Text(
-          title,
-          style: AppStyles.semiBold16(context),
-        ),
-        trailing: trilling == null
-            ? null
-            : Text(
-                trilling!,
-                style: AppStyles.semiBold16(context),
+    return Column(
+      children: [
+        const SizedBox(height: 12),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              title,
+              style: AppStyles.semiBold16(context).copyWith(
+                color: labelsColor ?? AppColors.grey,
               ),
-        contentPadding: EdgeInsets.zero,
-      ),
+            ),
+            if (trilling != null)
+              Text(
+                trilling!,
+                style: AppStyles.semiBold16(context).copyWith(
+                  color: AppColors.white,
+                ),
+              ),
+          ],
+        ),
+        const SizedBox(height: 12),
+        Divider(
+          color: AppColors.black2,
+          thickness: 1,
+        ),
+      ],
     );
   }
 }

@@ -12,29 +12,29 @@ class ProjectLinks extends StatelessWidget {
   final ProjectEntity project;
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Row(
-        children: [
-          if (project.gitHubLink != null)
-            CustomLinkButton(
-              text: 'GitHub',
-              svgImage: Assets.iconsGithub,
-              link: project.gitHubLink!,
-            ),
-          if (project.linkedInLink != null)
-            CustomLinkButton(
-              text: 'LinkedIn',
-              svgImage: Assets.iconsLinkedin,
-              link: project.linkedInLink!,
-            ),
-          if (project.figmaLink != null)
-            CustomLinkButton(
-              text: 'Figma',
-              svgImage: Assets.iconsFigma,
-              link: project.figmaLink!,
-            ),
-        ],
-      ),
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      children: [
+        if (project.gitHubLink != null)
+          CustomLinkButton(
+            text: 'GitHub',
+            svgImage: Assets.iconsGithub,
+            link: project.gitHubLink!,
+          ),
+        if (project.linkedInLink != null)
+          CustomLinkButton(
+            text: 'LinkedIn',
+            svgImage: Assets.iconsLinkedin,
+            link: project.linkedInLink!,
+          ),
+        if (project.figmaLink != null)
+          CustomLinkButton(
+            text: 'Figma',
+            svgImage: Assets.iconsFigma,
+            link: project.figmaLink!,
+          ),
+      ],
     );
   }
 }

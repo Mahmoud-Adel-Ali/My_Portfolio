@@ -19,37 +19,35 @@ class CustomLinkButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Flexible(
-      child: TextButton(
-        onPressed: () => openUrl(context, link),
-        style: TextButton.styleFrom(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          spacing: 4,
-          children: [
-            ColorFiltered(
-              colorFilter: ColorFilter.mode(
-                AppColors.main,
-                BlendMode.srcIn,
-              ),
-              child: SvgPicture.asset(
-                svgImage,
-                height: 22,
-                width: 22,
-              ),
+    return TextButton(
+      onPressed: () => openUrl(context, link),
+      style: TextButton.styleFrom(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
+        spacing: 4,
+        children: [
+          ColorFiltered(
+            colorFilter: ColorFilter.mode(
+              AppColors.main,
+              BlendMode.srcIn,
             ),
-            Text(
-              text,
-              style: AppStyles.semiBold16(context).copyWith(
-                color: AppColors.main,
-              ),
+            child: SvgPicture.asset(
+              svgImage,
+              height: 22,
+              width: 22,
             ),
-          ],
-        ),
+          ),
+          Text(
+            text,
+            style: AppStyles.semiBold16(context).copyWith(
+              color: AppColors.main,
+            ),
+          ),
+        ],
       ),
     );
   }

@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/entities/project_entity.dart';
@@ -10,19 +11,24 @@ class ProjectItemForDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(32.0),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        spacing: 16,
-        children: [
-          Expanded(
-            child: ProjectImageCard(project: project),
-          ),
-          Expanded(
-            child: ProjectDetails(project: project),
-          ),
-        ],
+    return FadeInUp(
+      duration: const Duration(milliseconds: 600),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 48.0, horizontal: 32),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          spacing: 64,
+          children: [
+            Expanded(
+              flex: 5,
+              child: ProjectImageCard(project: project),
+            ),
+            Expanded(
+              flex: 6,
+              child: ProjectDetails(project: project),
+            ),
+          ],
+        ),
       ),
     );
   }
