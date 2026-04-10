@@ -30,11 +30,16 @@ The primary goal of this project is to **present my skills, personal background,
 
 ### Mobile Preview
 
-![Mobile Preview 1](assets/overview/mobile1.jpg)
-![Mobile Preview 2](assets/overview/mobile2.jpg)
-![Mobile Preview 3](assets/overview/mobile3.jpg)
-![Mobile Preview 4](assets/overview/mobile4.jpg)
-![Mobile Preview 5](assets/overview/mobile5.jpg)
+![Mobile Preview 1](assets/overview/mobile1.png
+)
+![Mobile Preview 2](assets/overview/mobile2.png
+)
+![Mobile Preview 3](assets/overview/mobile3.png
+)
+![Mobile Preview 4](assets/overview/mobile4.png
+)
+![Mobile Preview 5](assets/overview/mobile5.png
+)
 
 ---
 

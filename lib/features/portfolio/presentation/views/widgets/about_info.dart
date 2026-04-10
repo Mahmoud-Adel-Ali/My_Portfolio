@@ -31,7 +31,7 @@ class AboutInfo extends StatelessWidget {
         SizedBox(
           width: double.infinity,
           child: Text(
-            "Experienced Flutter Developer with 2+ years of expertise in building high-performance, scalable mobile applications using Dart, Flutter, and Firebase. Proficient in state management (BLoC, Provider, Riverpod), architectural patterns (MVVM, Clean Architecture), and RESTful API integration. Skilled in UI/UX implementation from Figma designs, debugging, and testing for optimal app stability. Strong foundation in OOP, SOLID principles, data structures, and algorithms, with a passion for writing clean, maintainable code. Effective communicator and team player in Agile environments, fluent in English for seamless collaboration. Committed to continuous learning and staying updated with emerging Flutter technologies.",
+            "Flutter Developer focused on building scalable, high-quality mobile applications with clean architecture and exceptional user experience. Experienced in developing cross-platform apps using Flutter, Firebase, and REST APIs, with strong expertise in BLoC and Provider state management. Known for delivering pixel-perfect UI from Figma designs and writing maintainable, performance-driven code. Continuously learning and adapting to modern technologies to build impactful digital products.",
             style: AppStyles.regular18(context),
           ),
         ),
