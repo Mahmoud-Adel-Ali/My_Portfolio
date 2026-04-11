@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/constants/app_constants.dart';
+import '../../../../../core/theme/app_colors.dart';
 import '../../../../../core/theme/app_styles.dart';
 import '../../../../../core/utils/assets.dart';
 import '../../../../../core/utils/functions/open_url.dart';
@@ -14,6 +15,7 @@ class LetsConnectInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(
           width: double.infinity,
@@ -22,33 +24,43 @@ class LetsConnectInfo extends StatelessWidget {
             style: AppStyles.regular40(context),
           ),
         ),
-        SizedBox(
-          width: double.infinity,
-          child: SelectableText(
-            "Say hello at mahmoudadela413@gmailcom",
-            style: AppStyles.regular18(context),
+        const SizedBox(height: 16),
+        InkWell(
+          onTap: () => openUrl(context, 'mailto:${AppConstants.email}'),
+          child: Text(
+            "Say hello at ${AppConstants.email}",
+            style: AppStyles.regular18(context).copyWith(
+              color: AppColors.white,
+              decoration: TextDecoration.underline,
+            ),
           ),
         ),
-        SizedBox(height: 16),
+        const SizedBox(height: 12),
+        InkWell(
+          onTap: () => openUrl(context, 'tel:${AppConstants.phoneNum}'),
+          child: Text(
+            "Or call me at ${AppConstants.phoneNum}",
+            style: AppStyles.regular18(context).copyWith(
+              color: AppColors.white,
+              decoration: TextDecoration.underline,
+            ),
+          ),
+        ),
+        const SizedBox(height: 24),
         Row(
           children: [
             CustomIconButton(
               svgImage: Assets.iconsLinkedin,
-              onPressed: () {
-                openUrl(context, AppConstants.linkedInUrl);
-              },
+              onPressed: () => openUrl(context, AppConstants.linkedInUrl),
             ),
             CustomIconButton(
               svgImage: Assets.iconsGithub,
-              onPressed: () {
-                openUrl(context, AppConstants.githubUrl);
-              },
+              onPressed: () => openUrl(context, AppConstants.githubUrl),
             ),
+            // WhatsApp Button
             CustomIconButton(
-              svgImage: Assets.iconsInstagram,
-              onPressed: () {
-                // openUrl(context, AppConstants.instagramUrl);
-              },
+              svgImage: Assets.iconsVector, // Placeholder icon
+              onPressed: () => openUrl(context, AppConstants.whatsappLink),
             ),
           ],
         ),

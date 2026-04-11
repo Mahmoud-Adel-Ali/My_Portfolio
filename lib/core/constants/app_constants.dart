@@ -3,6 +3,9 @@ abstract class AppConstants {
   static const String manropeFontFamily = "Manrope";
   static const String interFontFamily = "Inter";
   static const int duration = 300;
+  static const String phoneNum = '+201004285088';
+  static const String email = 'mahmoudadela413@gmail.com';
+  static const String whatsappLink = 'https://wa.link/nol8os';
   static const String linkedInUrl =
       "https://www.linkedin.com/in/mahmoud-adel-ali-mohamed/";
   static const String githubUrl = "https://github.com/Mahmoud-Adel-Ali";
